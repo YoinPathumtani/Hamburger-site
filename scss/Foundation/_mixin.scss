@@ -1,0 +1,20 @@
+@charset 'utf-8';
+
+/* メディアクエリなど */
+// モバイルファーストでコーディング
+
+$breakpoints: (
+  // 'sp': 'screen and (max-width: 375px)'
+  'tab': 'screen and (min-width:834px)',
+  'pc': 'screen and (min-width: 1553px)',
+) !default;
+
+@mixin mq($breakpoint) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+// @include mq(tab) {
+//   ここにCSS記述で呼び出し
+// }

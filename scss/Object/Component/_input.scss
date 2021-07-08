@@ -1,0 +1,11 @@
+.c-input {
+  &-header {
+    width: 230px;
+    height: 46px;
+    border-radius: 10px;
+    border: 1px solid $color-font;
+    @include mq(tab) {
+      width: 396px;
+    }
+  }
+}

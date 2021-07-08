@@ -1,0 +1,27 @@
+.c-btn {
+  &-header {
+    width: 51px;
+    height: 24px;
+    font-size: 2rem;
+    color: $color-font;
+    float: right;
+  }
+  &-serch {
+    padding: 0;
+    width: 78px;
+    height: 46px;
+    font-family: $font-J;
+    color: $color-font;
+    font-size: 1.6rem;
+    background-color: $color-btn;
+    border: 1px solid $color-font;
+    border-radius: 10px;
+    vertical-align: top;
+    @include mq(tab) {
+      width: 136px;
+    }
+  }
+  &-menu {
+    float: right;
+  }
+}

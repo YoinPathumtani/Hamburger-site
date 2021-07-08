@@ -1,0 +1,36 @@
+.p-box {
+  padding: 15px 10px;
+  position: relative;
+  &__takeOut {
+    grid-area: takeOu;
+    background-image: url('/img/takeOut_img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__eatIn {
+    grid-area: eatIn;
+    background-image: url('/img/page-title_arcive2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__inr {
+    width: 93.73%;
+    height: 25.39%;
+    background-color: $color-white-thin;
+    padding: 19px 10px;
+  }
+  & > div:nth-of-type(2) {
+    position: absolute;
+    bottom: 11px;
+    left: 0;
+    width: 100%;
+
+  }
+  &-shadow {
+    background-color: $color-black-thin;
+    height: 60%;
+    @include mq(tab) {
+      height: 100%;
+    }
+  }
+}

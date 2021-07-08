@@ -1,0 +1,73 @@
+.c-text {
+  &-ctr {
+    text-align: center;
+  }
+  &-header {
+    color: $color-font;
+    font-size: 4rem;
+    width: 203px;
+  }
+  &-menu {
+    font-family: $font-J;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 1.5;
+    &-item {
+      font-family: $font-J;
+      font-size: 2rem;
+      font-weight: 200;
+      line-height: 1.5;
+    }
+  }
+  &-mv {
+    font-family: $font-J;
+    color: $color-white;
+    font-size: 3.6rem;
+    height: 51px;
+    width: 216px;
+    position: absolute;
+    top: calc(50% - 51px / 2);
+    left: 25px;
+  }
+  &-box {
+    font-size: 4.1rem;
+    color: $color-white;
+    &-map {
+      font-family: $font-J;
+      font-size: 3rem;
+      &-p {
+        font-family: $font-J;
+        font-size: 1.4rem;
+        color: $color-white;
+        line-height: 2.36;
+        overflow: hidden;
+      }
+    }
+    &Inr {
+      font-family: $font-J;
+      font-size: 2.2rem;
+      color: $color-font-boxInr;
+      &-p {
+        font-family: $font-J;
+        font-size: 1.6rem;
+        color: $color-font-boxInr;
+        font-weight: normal;
+        line-height: 1.4375;
+      }
+    }
+  }
+  &-footerLink {
+    font-family: $font-J;
+    font-size: 2rem;
+    color: $color-white;
+    font-weight: normal;
+    line-height: 1;
+  }
+  &-footerSmall {
+    font-family: $font-J;
+    font-size: 1.4rem;
+    color: $color-white;
+    font-weight: normal;
+    display: block;
+  }
+}

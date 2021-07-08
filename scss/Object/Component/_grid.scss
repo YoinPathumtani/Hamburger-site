@@ -1,0 +1,26 @@
+
+.c-grid {
+  display: grid;
+  grid-template: 
+      "header header header" 217px
+      "mainVi mainVi mainVi" 285px
+      "...... ...... ......" 20px
+      "...... takeOu ......" 642px
+      "...... ...... ......" 20px
+      "...... eatIn  ......" 642px
+      "...... ...... ......" 49px
+      "map    map    map   " 691px
+      "footer footer footer" 150px
+      / 20px   1fr     20px; 
+  @include mq(tab) {
+    grid-template: 
+      "header header header header header" 217px
+      "mainVi mainVi mainVi mainVi mainVi" 285px
+      "...... ...... ...... ...... ......" 40px
+      "...... takeOu ...... eatIn  ......" 681px
+      "...... ...... ...... ...... ......" 40px
+      "map    map    map    map    map   " 415px
+      "footer footer footer footer footer" 150px
+      /1fr    357px  1fr    357px  1fr; 
+  }
+}

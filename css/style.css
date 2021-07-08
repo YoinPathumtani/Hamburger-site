@@ -1,0 +1,456 @@
+@charset "UTF-8";
+/* FLOCSSで記述 */
+/* ブラウザのデフォルトのスタイルをリセットするcssを定義*/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* プロジェクトにおける変数を定義 */
+/* プロジェクトにおける基本的なスタイルを定義 */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto";
+  font-weight: bold;
+  line-height: 1;
+  color: #707070;
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #707070;
+}
+
+button {
+  border: none;
+  background-color: inherit;
+}
+
+ol, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* メディアクエリなど */
+/* ヘッダーのスタイルを定義 */
+.l-header {
+  grid-area: header;
+  background-color: #FFF7EF;
+}
+
+.l-header-menu {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  min-height: 2716px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  -webkit-transition: right 1s !important;
+  transition: right 1s !important;
+}
+
+@media screen and (min-width: 834px) {
+  .l-header-menu {
+    min-height: 1823px;
+  }
+}
+
+.l-header-menu-list {
+  width: calc(100% - 47px);
+  min-height: 2716px;
+  height: 100%;
+  background-color: #F2EDE9;
+  z-index: 2;
+}
+
+@media screen and (min-width: 834px) {
+  .l-header-menu-list {
+    width: calc(100% - 470px);
+    float: right;
+    min-height: 1823px;
+  }
+}
+
+/* メインエリアのスタイルを定義 */
+/* セクションエリアのスタイルを定義 */
+.l-section-map {
+  grid-area: map;
+  background-image: url("/img/page-title_map.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* サイドバーエリアのスタイルを定義 */
+/* フッターのスタイルを定義 */
+.l-footer {
+  grid-area: footer;
+  background-image: url("/img/footer-pc.jpg");
+  text-align: center;
+  color: #FFF;
+}
+
+.l-footer > a:first-of-type {
+  border-right: 2px solid #FFF;
+}
+
+.c-btn-header {
+  width: 51px;
+  height: 24px;
+  font-size: 2rem;
+  color: #707070;
+  float: right;
+}
+
+.c-btn-serch {
+  padding: 0;
+  width: 78px;
+  height: 46px;
+  font-family: "M + 1m";
+  color: #707070;
+  font-size: 1.6rem;
+  background-color: #F2EDE9;
+  border: 1px solid #707070;
+  border-radius: 10px;
+  vertical-align: top;
+}
+
+@media screen and (min-width: 834px) {
+  .c-btn-serch {
+    width: 136px;
+  }
+}
+
+.c-btn-menu {
+  float: right;
+}
+
+.c-deco-icon {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  font-size: 2.4rem;
+  padding: 11px 16px;
+}
+
+.c-deco-underLine {
+  border-bottom: 4px #FFF solid;
+  width: 10%;
+}
+
+.c-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-template: "header header header" 217px "mainVi mainVi mainVi" 285px "...... ...... ......" 20px "...... takeOu ......" 642px "...... ...... ......" 20px "...... eatIn  ......" 642px "...... ...... ......" 49px "map    map    map   " 691px "footer footer footer" 150px / 20px   1fr     20px;
+}
+
+@media screen and (min-width: 834px) {
+  .c-grid {
+    grid-template: "header header header header header" 217px "mainVi mainVi mainVi mainVi mainVi" 285px "...... ...... ...... ...... ......" 40px "...... takeOu ...... eatIn  ......" 681px "...... ...... ...... ...... ......" 40px "map    map    map    map    map   " 415px "footer footer footer footer footer" 150px /1fr    357px  1fr    357px  1fr;
+  }
+}
+
+.c-input-header {
+  width: 230px;
+  height: 46px;
+  border-radius: 10px;
+  border: 1px solid #707070;
+}
+
+@media screen and (min-width: 834px) {
+  .c-input-header {
+    width: 396px;
+  }
+}
+
+.c-text-ctr {
+  text-align: center;
+}
+
+.c-text-header {
+  color: #707070;
+  font-size: 4rem;
+  width: 203px;
+}
+
+.c-text-menu {
+  font-family: "M + 1m";
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.c-text-menu-item {
+  font-family: "M + 1m";
+  font-size: 2rem;
+  font-weight: 200;
+  line-height: 1.5;
+}
+
+.c-text-mv {
+  font-family: "M + 1m";
+  color: #FFF;
+  font-size: 3.6rem;
+  height: 51px;
+  width: 216px;
+  position: absolute;
+  top: calc(50% - 51px / 2);
+  left: 25px;
+}
+
+.c-text-box {
+  font-size: 4.1rem;
+  color: #FFF;
+}
+
+.c-text-box-map {
+  font-family: "M + 1m";
+  font-size: 3rem;
+}
+
+.c-text-box-map-p {
+  font-family: "M + 1m";
+  font-size: 1.4rem;
+  color: #FFF;
+  line-height: 2.36;
+  overflow: hidden;
+}
+
+.c-text-boxInr {
+  font-family: "M + 1m";
+  font-size: 2.2rem;
+  color: #3C2A10;
+}
+
+.c-text-boxInr-p {
+  font-family: "M + 1m";
+  font-size: 1.6rem;
+  color: #3C2A10;
+  font-weight: normal;
+  line-height: 1.4375;
+}
+
+.c-text-footerLink {
+  font-family: "M + 1m";
+  font-size: 2rem;
+  color: #FFF;
+  font-weight: normal;
+  line-height: 1;
+}
+
+.c-text-footerSmall {
+  font-family: "M + 1m";
+  font-size: 1.4rem;
+  color: #FFF;
+  font-weight: normal;
+  display: block;
+}
+
+.p-box {
+  padding: 15px 10px;
+  position: relative;
+}
+
+.p-box__takeOut {
+  grid-area: takeOu;
+  background-image: url("/img/takeOut_img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.p-box__eatIn {
+  grid-area: eatIn;
+  background-image: url("/img/page-title_arcive2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.p-box__inr {
+  width: 93.73%;
+  height: 25.39%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 19px 10px;
+}
+
+.p-box > div:nth-of-type(2) {
+  position: absolute;
+  bottom: 11px;
+  left: 0;
+  width: 100%;
+}
+
+.p-box-shadow {
+  background-color: rgba(0, 0, 0, 0.29);
+  height: 60%;
+}
+
+@media screen and (min-width: 834px) {
+  .p-box-shadow {
+    height: 100%;
+  }
+}
+
+.p-mainVisual {
+  grid-area: mainVi;
+  background-image: url("/img/mainvisual-sp@2x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.m-ctr {
+  margin: 0 auto;
+}
+
+.mt-9 {
+  margin-top: 9px;
+}
+
+.mt-19 {
+  margin-top: 19px;
+}
+
+.mt-28 {
+  margin-top: 28px;
+}
+
+.mt-34 {
+  margin-top: 34px;
+}
+
+.mt-187 {
+  margin-top: 187px;
+}
+
+.ml-12 {
+  margin-left: 12px;
+}
+
+.ml-47 {
+  margin-left: 47px;
+}
+
+.p-16 {
+  padding: 16px;
+}
+
+.p-40 {
+  padding: 40px;
+}
+
+.pt-25 {
+  padding-top: 25px;
+}
+
+.pt-39 {
+  padding-top: 39px;
+}
+
+.pl-22 {
+  padding-left: 22px;
+}
+
+.px-10 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.px-14 {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.px-17 {
+  padding-left: 17px;
+  padding-right: 17px;
+}
+
+.py-11 {
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+/*# sourceMappingURL=style.css.map */

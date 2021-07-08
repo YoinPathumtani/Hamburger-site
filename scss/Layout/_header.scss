@@ -1,0 +1,31 @@
+/* ヘッダーのスタイルを定義 */
+
+.l-header {
+  grid-area: header;
+  background-color: $color-bg;
+  &-menu {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    min-height: 2716px;
+    background-color: $color-black-thin-menu;
+    z-index: 1;
+    transition: right 1s !important;
+    @include mq(tab) {
+      min-height: 1823px;
+    }
+    &-list {
+      width: calc(100% - 47px);
+      min-height: 2716px;      
+      height: 100%;
+      background-color: $color-btn;
+      z-index: 2;
+      @include mq(tab) {
+        width: calc(100% - 470px);
+        float: right;
+        min-height: 1823px;
+      }
+    }
+  }
+}

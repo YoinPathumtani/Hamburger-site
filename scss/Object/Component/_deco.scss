@@ -1,0 +1,15 @@
+.c-deco {
+  &-icon {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    font-size: 2.4rem;
+    padding: 11px 16px;
+  }
+  &-underLine {
+    border-bottom: 4px $color-white solid;
+    width: 10%;
+  }
+}

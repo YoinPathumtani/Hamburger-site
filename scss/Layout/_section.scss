@@ -1,0 +1,10 @@
+/* セクションエリアのスタイルを定義 */
+
+.l-section {
+  &-map {
+    grid-area: map;
+    background-image: url('/img/page-title_map.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
