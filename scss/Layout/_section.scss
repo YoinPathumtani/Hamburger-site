@@ -5,6 +5,11 @@
     grid-area: map;
     background-image: url('/img/page-title_map.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: bottom;
+    background-size: 100%;
+    @include mq(tab) {
+      background-image: url('/img/page-title_map@2x.jpg');
+      background-size: cover;
+    }
   }
 }

@@ -14,6 +14,14 @@
     transition: right 1s !important;
     @include mq(tab) {
       min-height: 1823px;
+      // height: 2843px;
+      height: 100%;
+    }
+    @include mq(pc) {
+      width: 367px;
+      right: 0;
+      height: 2843px;
+      transition: none !important;
     }
     &-list {
       width: calc(100% - 47px);
@@ -25,6 +33,11 @@
         width: calc(100% - 470px);
         float: right;
         min-height: 1823px;
+      }
+      @include mq(pc) {
+        width: 367px;
+        padding: 0;
+        margin: 0;
       }
     }
   }

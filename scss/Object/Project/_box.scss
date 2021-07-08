@@ -35,5 +35,9 @@
     @include mq(tab) {
       height: 100%;
     }
+    @include mq(pc) {
+      max-width: 60%;
+      padding-top: 83px;
+    }
   }
 }

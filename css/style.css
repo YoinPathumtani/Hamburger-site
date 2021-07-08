@@ -135,6 +135,17 @@ ol, ul, li {
 @media screen and (min-width: 834px) {
   .l-header-menu {
     min-height: 1823px;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 1553px) {
+  .l-header-menu {
+    width: 367px;
+    right: 0;
+    height: 2843px;
+    -webkit-transition: none !important;
+    transition: none !important;
   }
 }
 
@@ -154,13 +165,29 @@ ol, ul, li {
   }
 }
 
+@media screen and (min-width: 1553px) {
+  .l-header-menu-list {
+    width: 367px;
+    padding: 0;
+    margin: 0;
+  }
+}
+
 /* メインエリアのスタイルを定義 */
 /* セクションエリアのスタイルを定義 */
 .l-section-map {
   grid-area: map;
   background-image: url("/img/page-title_map.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: bottom;
+  background-size: 100%;
+}
+
+@media screen and (min-width: 834px) {
+  .l-section-map {
+    background-image: url("/img/page-title_map@2x.jpg");
+    background-size: cover;
+  }
 }
 
 /* サイドバーエリアのスタイルを定義 */
@@ -191,6 +218,7 @@ ol, ul, li {
     top: 86px;
     right: 235px;
     font-size: 3.6rem;
+    z-index: 2;
   }
 }
 
@@ -215,6 +243,12 @@ ol, ul, li {
 
 .c-btn-menu {
   float: right;
+}
+
+@media screen and (min-width: 1553px) {
+  .c-btn-menu {
+    display: none !important;
+  }
 }
 
 .c-deco-icon {
@@ -246,7 +280,7 @@ ol, ul, li {
 
 @media screen and (min-width: 1553px) {
   .c-grid {
-    grid-template: "header header header header header menu  " 217px "mainVi mainVi mainVi mainVi mainVi menu  " 530px "...... ...... ...... ...... ...... menu  " 120px "...... takeOu ...... eatIn  ...... menu  " 1196px "...... ...... ...... ...... ...... menu  " 131px "map    map    map    map    map    menu  " 649px "footer footer footer footer footer footer" 150px/minmax(111px, 1fr) 625px minmax(80px, 1fr) 625px minmax(111px, 1fr) 367px;
+    grid-template: "header header header header header menu  " 217px "mainVi mainVi mainVi mainVi mainVi menu  " 530px "...... ...... ...... ...... ...... menu  " 120px "...... takeOu ...... eatIn  ...... menu  " 1196px "...... ...... ...... ...... ...... menu  " 131px "map    map    map    map    map    menu  " 649px "footer footer footer footer footer footer" 150px/minmax(111px, 1fr) 32.55% minmax(80px, auto) 32.55% minmax(111px, 1fr) 367px;
   }
 }
 
@@ -314,6 +348,12 @@ ol, ul, li {
   color: #FFF;
   line-height: 2.36;
   overflow: hidden;
+}
+
+@media screen and (min-width: 1553px) {
+  .c-text-box-map-p {
+    font-size: 1.6rem;
+  }
 }
 
 .c-text-boxInr {
@@ -396,12 +436,26 @@ ol, ul, li {
   }
 }
 
+@media screen and (min-width: 1553px) {
+  .p-box-shadow {
+    max-width: 60%;
+    padding-top: 83px;
+  }
+}
+
 .p-mainVisual {
   grid-area: mainVi;
   background-image: url("/img/mainvisual-sp@2x.jpg");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   position: relative;
+}
+
+@media screen and (min-width: 1553px) {
+  .p-mainVisual {
+    background-image: url("/img/mainvisual-pc.jpg");
+  }
 }
 
 .m-ctr {

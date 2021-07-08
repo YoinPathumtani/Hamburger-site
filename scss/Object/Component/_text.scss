@@ -41,6 +41,9 @@
         color: $color-white;
         line-height: 2.36;
         overflow: hidden;
+        @include mq(pc) {
+          font-size: 1.6rem;
+        }
       }
     }
     &Inr {
