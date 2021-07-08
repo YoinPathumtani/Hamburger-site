@@ -6,6 +6,11 @@
     color: $color-font;
     font-size: 4rem;
     width: 203px;
+    @include mq(pc) {
+      position: absolute;
+      top: 67px;
+      left: 65px;
+    }
   }
   &-menu {
     font-family: $font-J;

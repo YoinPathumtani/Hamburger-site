@@ -284,6 +284,14 @@ ol, ul, li {
   }
 }
 
+@media screen and (min-width: 1553px) {
+  .c-input {
+    position: absolute;
+    top: 67px;
+    right: 400px;
+  }
+}
+
 .c-input-header {
   width: 230px;
   height: 46px;
@@ -305,6 +313,14 @@ ol, ul, li {
   color: #707070;
   font-size: 4rem;
   width: 203px;
+}
+
+@media screen and (min-width: 1553px) {
+  .c-text-header {
+    position: absolute;
+    top: 67px;
+    left: 65px;
+  }
 }
 
 .c-text-menu {

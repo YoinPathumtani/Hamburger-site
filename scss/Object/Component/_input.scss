@@ -1,4 +1,9 @@
 .c-input {
+  @include mq(pc) {
+    position: absolute;
+    top: 67px;
+    right: 400px;
+  }
   &-header {
     width: 230px;
     height: 46px;
