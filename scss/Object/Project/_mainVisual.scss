@@ -5,7 +5,8 @@
   background-position: center;
   background-size: cover;
   position: relative;
-  @include mq(pc) {
+  width: 100%;
+  @include mq(tab) {
     background-image: url('/img/mainvisual-pc.jpg');
   }
 }

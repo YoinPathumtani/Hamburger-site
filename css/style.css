@@ -204,11 +204,17 @@ ol, ul, li {
 }
 
 .c-btn-header {
-  width: 51px;
+  width: 100px;
   height: 24px;
   font-size: 2rem;
   color: #707070;
   float: right;
+}
+
+@media screen and (min-width: 834px) {
+  .c-btn-header {
+    font-size: 3.4rem;
+  }
 }
 
 @media screen and (min-width: 1553px) {
@@ -269,12 +275,12 @@ ol, ul, li {
 .c-grid {
   display: -ms-grid;
   display: grid;
-  grid-template: "header header header" 217px "mainVi mainVi mainVi" 285px "...... ...... ......" 20px "...... takeOu ......" 642px "...... ...... ......" 20px "...... eatIn  ......" 642px "...... ...... ......" 49px "map    map    map   " 691px "footer footer footer" 150px / 20px   1fr     20px;
+  grid-template: "header header header" 217px "mainVi mainVi mainVi" 285px "...... ...... ......" 20px "...... takeOu ......" 642px "...... ...... ......" 20px "...... eatIn  ......" 642px "...... ...... ......" 49px "map    map    map   " 691px "footer footer footer" 150px /1fr    335px  1fr;
 }
 
 @media screen and (min-width: 834px) {
   .c-grid {
-    grid-template: "header header header header header" 217px "mainVi mainVi mainVi mainVi mainVi" 285px "...... ...... ...... ...... ......" 40px "...... takeOu ...... eatIn  ......" 681px "...... ...... ...... ...... ......" 40px "map    map    map    map    map   " 415px "footer footer footer footer footer" 150px /1fr    357px  1fr    357px  1fr;
+    grid-template: "header header header header header" 217px "mainVi mainVi mainVi mainVi mainVi" 285px "...... ...... ...... ...... ......" 40px "...... takeOu ...... eatIn  ......" 681px "...... ...... ...... ...... ......" 40px "map    map    map    map    map   " 415px "footer footer footer footer footer" 150px /2fr    357px  1fr    357px  2fr;
   }
 }
 
@@ -405,25 +411,24 @@ ol, ul, li {
 .p-box {
   padding: 15px 10px;
   position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .p-box__takeOut {
   grid-area: takeOu;
   background-image: url("/img/takeOut_img.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .p-box__eatIn {
   grid-area: eatIn;
-  background-image: url("/img/page-title_arcive2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("/img/page-title_arcive2@2x.jpg");
 }
 
 .p-box__inr {
   width: 93.73%;
-  height: 25.39%;
+  height: 35.39%;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 19px 10px;
 }
@@ -466,9 +471,10 @@ ol, ul, li {
   background-position: center;
   background-size: cover;
   position: relative;
+  width: 100%;
 }
 
-@media screen and (min-width: 1553px) {
+@media screen and (min-width: 834px) {
   .p-mainVisual {
     background-image: url("/img/mainvisual-pc.jpg");
   }

@@ -1,21 +1,20 @@
 .p-box {
   padding: 15px 10px;
   position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   &__takeOut {
     grid-area: takeOu;
     background-image: url('/img/takeOut_img.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
   }
   &__eatIn {
     grid-area: eatIn;
-    background-image: url('/img/page-title_arcive2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url('/img/page-title_arcive2@2x.jpg');
   }
   &__inr {
     width: 93.73%;
-    height: 25.39%;
+    height: 35.39%;
     background-color: $color-white-thin;
     padding: 19px 10px;
     @include mq(pc) {

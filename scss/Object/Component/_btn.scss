@@ -1,10 +1,13 @@
 .c-btn {
   &-header {
-    width: 51px;
+    width: 100px;
     height: 24px;
     font-size: 2rem;
     color: $color-font;
     float: right;
+    @include mq(tab) {
+      font-size: 3.4rem;
+    }
     @include mq(pc) {
       float: none;
       position: absolute;
