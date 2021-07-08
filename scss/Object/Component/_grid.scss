@@ -23,4 +23,15 @@
       "footer footer footer footer footer" 150px
       /1fr    357px  1fr    357px  1fr; 
   }
+  @include mq(pc) {
+    grid-template: 
+      "header header header header header menu  " 217px
+      "mainVi mainVi mainVi mainVi mainVi menu  " 530px
+      "...... ...... ...... ...... ...... menu  " 120px
+      "...... takeOu ...... eatIn  ...... menu  " 1196px
+      "...... ...... ...... ...... ...... menu  " 131px
+      "map    map    map    map    map    menu  " 649px
+      "footer footer footer footer footer footer" 150px
+      /minmax(111px, 1fr)    625px  minmax(80px, 1fr)    625px  minmax(111px, 1fr)    367px; 
+  }
 }

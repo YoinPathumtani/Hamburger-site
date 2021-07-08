@@ -18,6 +18,9 @@
     height: 25.39%;
     background-color: $color-white-thin;
     padding: 19px 10px;
+    @include mq(pc) {
+      height: 174px;
+    }
   }
   & > div:nth-of-type(2) {
     position: absolute;

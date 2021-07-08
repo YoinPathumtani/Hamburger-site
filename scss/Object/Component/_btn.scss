@@ -5,6 +5,13 @@
     font-size: 2rem;
     color: $color-font;
     float: right;
+    @include mq(pc) {
+      float: none;
+      position: absolute;
+      top: 86px;
+      right: 235px;
+      font-size: 3.6rem;
+    }
   }
   &-serch {
     padding: 0;
