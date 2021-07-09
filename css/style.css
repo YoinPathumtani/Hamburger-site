@@ -224,6 +224,7 @@ ol, ul, li {
     top: 86px;
     right: 235px;
     font-size: 3.6rem;
+    background-color: #F2EDE9;
     z-index: 2;
   }
 }
@@ -275,12 +276,12 @@ ol, ul, li {
 .c-grid {
   display: -ms-grid;
   display: grid;
-  grid-template: "header header header" 217px "mainVi mainVi mainVi" 285px "...... ...... ......" 20px "...... takeOu ......" 642px "...... ...... ......" 20px "...... eatIn  ......" 642px "...... ...... ......" 49px "map    map    map   " 691px "footer footer footer" 150px /1fr    335px  1fr;
+  grid-template: "header header header" 217px "mainVi mainVi mainVi" 285px "...... ...... ......" 20px "...... takeOu ......" 642px "...... ...... ......" 20px "...... eatIn  ......" 642px "...... ...... ......" 49px "map    map    map   " 691px "footer footer footer" 150px /20px   1fr    20px;
 }
 
 @media screen and (min-width: 834px) {
   .c-grid {
-    grid-template: "header header header header header" 217px "mainVi mainVi mainVi mainVi mainVi" 285px "...... ...... ...... ...... ......" 40px "...... takeOu ...... eatIn  ......" 681px "...... ...... ...... ...... ......" 40px "map    map    map    map    map   " 415px "footer footer footer footer footer" 150px /2fr    357px  1fr    357px  2fr;
+    grid-template: "header header header header header" 217px "mainVi mainVi mainVi mainVi mainVi" 285px "...... ...... ...... ...... ......" 40px "...... takeOu ...... eatIn  ......" 681px "...... ...... ...... ...... ......" 40px "map    map    map    map    map   " 415px "footer footer footer footer footer" 150px /40px   1fr    40px   1fr    40px;
   }
 }
 
@@ -414,6 +415,7 @@ ol, ul, li {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  width: 100%;
 }
 
 .p-box__takeOut {

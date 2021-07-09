@@ -11,7 +11,7 @@
       "...... ...... ......" 49px
       "map    map    map   " 691px
       "footer footer footer" 150px
-      /1fr    335px  1fr; 
+      /20px   1fr    20px; 
   @include mq(tab) {
     grid-template: 
       "header header header header header" 217px
@@ -21,7 +21,7 @@
       "...... ...... ...... ...... ......" 40px
       "map    map    map    map    map   " 415px
       "footer footer footer footer footer" 150px
-      /2fr    357px  1fr    357px  2fr; 
+      /40px   1fr    40px   1fr    40px; 
   }
   @include mq(pc) {
     grid-template: 
