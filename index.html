@@ -10,94 +10,96 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
-<body class="c-grid">
-  <header class="l-header p-16">
-    <button id="is_open" class="c-btn-header">Menu</button>
-    <div class="l-header-menu">
-      <ul class="l-header-menu-list ml-47 px-17 pt-25">
-        <i id="is_close" class="fa fa-times fa-4x c-btn-menu" aria-hidden="true"></i>
-        <li class="c-text-menu mt-19 ml-47 mt-187">バーガー
-          <ul class="mt-19">
-            <li class="c-text-menu-item py-11 pl-22"><a href="#">ハンバーガー</a></li>
-            <li class="c-text-menu-item py-11 pl-22"><a href="#">チーズバーガー</a></li>
-            <li class="c-text-menu-item py-11 pl-22"><a href="#">テリヤキバーガー</a></li>
-            <li class="c-text-menu-item py-11 pl-22"><a href="#">アボガドバーガー</a></li>
-            <li class="c-text-menu-item py-11 pl-22"><a href="#">フィッシュバーガー</a></li>
-            <li class="c-text-menu-item py-11 pl-22"><a href="#">ベーコンバーガー</a></li>
-            <li class="c-text-menu-item py-11 pl-22"><a href="#">チキンバーガー</a></li>
-          </ul>
-        </li>
-        <li class="c-text-menu mt-19 ml-47">サイド
-          <ul class="mt-19">
-            <li class="c-text-menu-item py-11 pl-22"><a href="#">ポテト</a></li>
-            <li class="c-text-menu-item py-11 pl-22"><a href="#">サラダ</a></li>
-            <li class="c-text-menu-item py-11 pl-22"><a href="#">ナゲット</a></li>
-            <li class="c-text-menu-item py-11 pl-22"><a href="#">コーン</a></li>
-          </ul>
-        </li>
-        <li class="c-text-menu mt-19 ml-47">ドリンク
-          <ul class="mt-19v">
-            <li class="c-text-menu-item py-11 pl-22"><a href="#">コーラ</a></li>
-            <li class="c-text-menu-item py-11 pl-22"><a href="#">ファンタ</a></li>
-            <li class="c-text-menu-item py-11 pl-22"><a href="#">オレンジ</a></li>
-            <li class="c-text-menu-item py-11 pl-22"><a href="#">アップル</a></li>
-            <li class="c-text-menu-item py-11 pl-22"><a href="#">紅茶（Ice/Hot）</a></li>
-            <li class="c-text-menu-item py-11 pl-22"><a href="#">コーヒー（Ice/Hot）</a></li>
-          </ul>
-        </li>
-      </ul>
+<body>
+
+  <div class="c-grid">
+    <header class="l-header p-16">
+      <button id="is-open" class="c-btn-header" type="button" value="button">Menu</button>
+      <h1 class="c-text-header">Hamburger</h1>
+      <form action="#" method="#" class="c-text-ctr c-input">
+        <input type="text" class="c-deco-icon c-input-header" placeholder="&#xf002;">
+        <input type="submit" value="検索" class="c-btn-serch ml-12">
+      </form>
+    </header>
+    <div id="overlay"></div>
+    <ul id="g-nav" class="p-nav px-17 pt-25">
+      <i id="is_close" class="fa fa-times fa-4x c-btn-x" aria-hidden="true"></i>
+      <li class="c-text-menu mt-19 ml-47 mt-187">バーガー
+        <ul class="mt-19">
+          <li class="c-text-menu-item py-11 pl-22"><a href="#">ハンバーガー</a></li>
+          <li class="c-text-menu-item py-11 pl-22"><a href="#">チーズバーガー</a></li>
+          <li class="c-text-menu-item py-11 pl-22"><a href="#">テリヤキバーガー</a></li>
+          <li class="c-text-menu-item py-11 pl-22"><a href="#">アボガドバーガー</a></li>
+          <li class="c-text-menu-item py-11 pl-22"><a href="#">フィッシュバーガー</a></li>
+          <li class="c-text-menu-item py-11 pl-22"><a href="#">ベーコンバーガー</a></li>
+          <li class="c-text-menu-item py-11 pl-22"><a href="#">チキンバーガー</a></li>
+        </ul>
+      </li>
+      <li class="c-text-menu mt-19 ml-47">サイド
+        <ul class="mt-19">
+          <li class="c-text-menu-item py-11 pl-22"><a href="#">ポテト</a></li>
+          <li class="c-text-menu-item py-11 pl-22"><a href="#">サラダ</a></li>
+          <li class="c-text-menu-item py-11 pl-22"><a href="#">ナゲット</a></li>
+          <li class="c-text-menu-item py-11 pl-22"><a href="#">コーン</a></li>
+        </ul>
+      </li>
+      <li class="c-text-menu mt-19 ml-47">ドリンク
+        <ul class="mt-19v">
+          <li class="c-text-menu-item py-11 pl-22"><a href="#">コーラ</a></li>
+          <li class="c-text-menu-item py-11 pl-22"><a href="#">ファンタ</a></li>
+          <li class="c-text-menu-item py-11 pl-22"><a href="#">オレンジ</a></li>
+          <li class="c-text-menu-item py-11 pl-22"><a href="#">アップル</a></li>
+          <li class="c-text-menu-item py-11 pl-22"><a href="#">紅茶（Ice/Hot）</a></li>
+          <li class="c-text-menu-item py-11 pl-22"><a href="#">コーヒー（Ice/Hot）</a></li>
+        </ul>
+      </li>
+    </ul><!-- l-header-menu-list -->
+    <div class="p-mainVisual">
+      <h2 class="c-text-mv">ダミーサイト</h2>
     </div>
-    <h1 class="c-text-header m-ctr mt-28">Hamburger</h1>
-    <form action="#" method="#" class="pt-39 c-text-ctr c-input">
-      <input type="text" class="c-deco-icon c-input-header" placeholder="&#xf002;">
-      <input type="submit" value="検索" class="c-btn-serch ml-12">
-    </form>
-  </header>
-  <div class="p-mainVisual">
-    <h2 class="c-text-mv">ダミーサイト</h2>
-  </div>
-  <section class="p-box p-box__takeOut">
-    <h2 class="c-text-box">Take Out</h2>
-    <div class="c-deco-underLine mt-19"></div>
-    <div>
-      <div class="p-box__inr m-ctr">
-        <h3 class="c-text-boxInr">Take OUT</h3>
-        <p class="c-text-boxInr-p mt-19">当店のテイクアウトで利用できる商品を掲載しています</p>
-      </div>
-      <div class="p-box__inr mt-9 m-ctr">
-        <h3 class="c-text-boxInr">Take OUT</h3>
-        <p class="c-text-boxInr-p mt-19">当店のテイクアウトで利用できる商品を掲載しています</p>
-      </div>
-    </div>
-  </section>
-  <section class="p-box p-box__eatIn">
-    <h2 class="c-text-box">Eat In</h2>
-    <div class="c-deco-underLine mt-19"></div>
-    <div>
-      <div class="p-box__inr m-ctr">
-        <h3 class="c-text-boxInr">Take OUT</h3>
-        <p class="c-text-boxInr-p mt-19">当店のテイクアウトで利用できる商品を掲載しています</p>
-      </div>
-      <div class="p-box__inr mt-9 m-ctr">
-        <h3 class="c-text-boxInr">Take OUT</h3>
-        <p class="c-text-boxInr-p mt-19">当店のテイクアウトで利用できる商品を掲載しています</p>
-      </div>
-    </div>
-  </section>
-  <section class="l-section-map">
-    <div class="p-box-shadow p-40">
-      <h2 class="c-text-box c-text-box-map">見出しが入ります</h2>
+    <section class="p-box p-box__takeOut">
+      <h2 class="c-text-box">Take Out</h2>
       <div class="c-deco-underLine mt-19"></div>
-      <p class="c-text-box-map-p mt-19">
-        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-      </p>
-    </div>
-  </section>
-  <footer class="l-footer pt-39">
-    <a href="#" class="c-text-footerLink px-14">ショップ情報</a>
-    <a href="#" class="c-text-footerLink px-14">ヒストリー</a><br>
-    <small class="c-text-footerSmall mt-34">Copyright: RaiseTech</small>
-  </footer>
+      <div>
+        <div class="p-box__inr m-ctr">
+          <h3 class="c-text-boxInr">Take OUT</h3>
+          <p class="c-text-boxInr-p mt-19">当店のテイクアウトで利用できる商品を掲載しています</p>
+        </div>
+        <div class="p-box__inr mt-9 m-ctr">
+          <h3 class="c-text-boxInr">Take OUT</h3>
+          <p class="c-text-boxInr-p mt-19">当店のテイクアウトで利用できる商品を掲載しています</p>
+        </div>
+      </div>
+    </section>
+    <section class="p-box p-box__eatIn">
+      <h2 class="c-text-box">Eat In</h2>
+      <div class="c-deco-underLine mt-19"></div>
+      <div>
+        <div class="p-box__inr m-ctr">
+          <h3 class="c-text-boxInr">Take OUT</h3>
+          <p class="c-text-boxInr-p mt-19">当店のテイクアウトで利用できる商品を掲載しています</p>
+        </div>
+        <div class="p-box__inr mt-9 m-ctr">
+          <h3 class="c-text-boxInr">Take OUT</h3>
+          <p class="c-text-boxInr-p mt-19">当店のテイクアウトで利用できる商品を掲載しています</p>
+        </div>
+      </div>
+    </section>
+    <section class="l-section-map">
+      <div class="p-box-shadow p-40">
+        <h2 class="c-text-box c-text-box-map">見出しが入ります</h2>
+        <div class="c-deco-underLine mt-19"></div>
+        <p class="c-text-box-map-p mt-19">
+          テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+        </p>
+      </div>
+    </section>
+    <footer class="l-footer pt-39">
+      <a href="#" class="c-text-footerLink px-14">ショップ情報</a>
+      <a href="#" class="c-text-footerLink px-14">ヒストリー</a><br>
+      <small class="c-text-footerSmall mt-34">Copyright: RaiseTech</small>
+    </footer>
+  </div>
   <script src="/js/jquery-3.6.0.min.js"></script>
   <script src="/js/style.js"></script>
 </body>

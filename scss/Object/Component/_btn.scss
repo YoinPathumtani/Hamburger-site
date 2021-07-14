@@ -1,6 +1,5 @@
 .c-btn {
   &-header {
-    width: 100px;
     height: 24px;
     font-size: 2rem;
     color: $color-font;
@@ -9,13 +8,9 @@
       font-size: 3.4rem;
     }
     @include mq(pc) {
-      float: none;
-      position: absolute;
-      top: 86px;
-      right: 235px;
       font-size: 3.6rem;
       background-color: $color-btn;
-      z-index: 2;
+      transform: translate(175px, 70px);
     }
   }
   &-serch {
@@ -33,10 +28,7 @@
       width: 136px;
     }
   }
-  &-menu {
+  &-x {
     float: right;
-    @include mq(pc) {
-      display: none !important;
-    }
   }
 }

@@ -120,56 +120,24 @@ ol, ul, li {
   background-color: #FFF7EF;
 }
 
-.l-header-menu {
-  position: absolute;
-  top: 0;
-  right: -100%;
-  width: 100%;
-  min-height: 2716px;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-  -webkit-transition: right 1s !important;
-  transition: right 1s !important;
-}
-
-@media screen and (min-width: 834px) {
-  .l-header-menu {
-    min-height: 1823px;
-    height: 100%;
-  }
+.l-header h1 {
+  width: 203px;
+  margin: 28px auto 0;
 }
 
 @media screen and (min-width: 1553px) {
-  .l-header-menu {
-    width: 367px;
-    right: 0;
-    height: 2843px;
-    -webkit-transition: none !important;
-    transition: none !important;
+  .l-header h1 {
+    margin: 67px 0 0 65px;
   }
 }
 
-.l-header-menu-list {
-  width: calc(100% - 47px);
-  min-height: 2716px;
-  height: 100%;
-  background-color: #F2EDE9;
-  z-index: 2;
-}
-
-@media screen and (min-width: 834px) {
-  .l-header-menu-list {
-    width: calc(100% - 470px);
-    float: right;
-    min-height: 1823px;
-  }
+.l-header form {
+  padding-top: 39px;
 }
 
 @media screen and (min-width: 1553px) {
-  .l-header-menu-list {
-    width: 367px;
-    padding: 0;
-    margin: 0;
+  .l-header form {
+    padding-top: 12px;
   }
 }
 
@@ -204,7 +172,6 @@ ol, ul, li {
 }
 
 .c-btn-header {
-  width: 100px;
   height: 24px;
   font-size: 2rem;
   color: #707070;
@@ -219,13 +186,10 @@ ol, ul, li {
 
 @media screen and (min-width: 1553px) {
   .c-btn-header {
-    float: none;
-    position: absolute;
-    top: 86px;
-    right: 235px;
     font-size: 3.6rem;
     background-color: #F2EDE9;
-    z-index: 2;
+    -webkit-transform: translate(175px, 70px);
+            transform: translate(175px, 70px);
   }
 }
 
@@ -248,14 +212,8 @@ ol, ul, li {
   }
 }
 
-.c-btn-menu {
+.c-btn-x {
   float: right;
-}
-
-@media screen and (min-width: 1553px) {
-  .c-btn-menu {
-    display: none !important;
-  }
 }
 
 .c-deco-icon {
@@ -287,7 +245,7 @@ ol, ul, li {
 
 @media screen and (min-width: 1553px) {
   .c-grid {
-    grid-template: "header header header header header menu  " 217px "mainVi mainVi mainVi mainVi mainVi menu  " 530px "...... ...... ...... ...... ...... menu  " 120px "...... takeOu ...... eatIn  ...... menu  " 1196px "...... ...... ...... ...... ...... menu  " 131px "map    map    map    map    map    menu  " 649px "footer footer footer footer footer footer" 150px/minmax(111px, 1fr) 32.55% minmax(80px, auto) 32.55% minmax(111px, 1fr) 367px;
+    grid-template: "header header header header header menu  " 217px "mainVi mainVi mainVi mainVi mainVi menu  " 530px "...... ...... ...... ...... ...... menu  " 120px "...... takeOu ...... eatIn  ...... menu  " 1196px "...... ...... ...... ...... ...... menu  " 131px "map    map    map    map    map    menu  " 649px "footer footer footer footer footer footer" 150px/minmax(111px, 1fr) 32.55% minmax(40px, auto) 32.55% minmax(111px, 1fr) 367px;
   }
 }
 
@@ -319,15 +277,6 @@ ol, ul, li {
 .c-text-header {
   color: #707070;
   font-size: 4rem;
-  width: 203px;
-}
-
-@media screen and (min-width: 1553px) {
-  .c-text-header {
-    position: absolute;
-    top: 67px;
-    left: 65px;
-  }
 }
 
 .c-text-menu {
@@ -466,6 +415,15 @@ ol, ul, li {
   }
 }
 
+#overlay {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
 .p-mainVisual {
   grid-area: mainVi;
   background-image: url("/img/mainvisual-sp@2x.jpg");
@@ -479,6 +437,34 @@ ol, ul, li {
 @media screen and (min-width: 834px) {
   .p-mainVisual {
     background-image: url("/img/mainvisual-pc.jpg");
+  }
+}
+
+.p-nav {
+  width: 87vw;
+  height: 2716px;
+  background-color: #F2EDE9;
+  position: absolute;
+  top: 0;
+  right: -100vw;
+  z-index: 100;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+@media screen and (min-width: 834px) {
+  .p-nav {
+    width: 44vw;
+    height: 1828px;
+  }
+}
+
+@media screen and (min-width: 1553px) {
+  .p-nav {
+    position: static;
+    width: auto;
+    height: 100%;
+    grid-area: menu;
   }
 }
 

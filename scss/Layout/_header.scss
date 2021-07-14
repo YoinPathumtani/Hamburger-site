@@ -3,42 +3,17 @@
 .l-header {
   grid-area: header;
   background-color: $color-bg;
-  &-menu {
-    position: absolute;
-    top: 0;
-    right: -100%;
-    width: 100%;
-    min-height: 2716px;
-    background-color: $color-black-thin-menu;
-    z-index: 1;
-    transition: right 1s !important;
-    @include mq(tab) {
-      min-height: 1823px;
-      // height: 2843px;
-      height: 100%;
-    }
+  h1 {
+    width: 203px;
+    margin: 28px auto 0;
     @include mq(pc) {
-      width: 367px;
-      right: 0;
-      height: 2843px;
-      transition: none !important;
+      margin: 67px 0 0 65px;
     }
-    &-list {
-      width: calc(100% - 47px);
-      min-height: 2716px;      
-      height: 100%;
-      background-color: $color-btn;
-      z-index: 2;
-      @include mq(tab) {
-        width: calc(100% - 470px);
-        float: right;
-        min-height: 1823px;
-      }
-      @include mq(pc) {
-        width: 367px;
-        padding: 0;
-        margin: 0;
-      }
+  }
+  form {
+    padding-top: 39px;
+    @include mq(pc) {
+      padding-top: 12px;
     }
   }
 }
