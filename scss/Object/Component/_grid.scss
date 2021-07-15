@@ -1,7 +1,8 @@
 
 .c-grid {
-  display: grid;
-  grid-template: 
+  &-front {
+    display: grid;
+    grid-template: 
       "header header header" 217px
       "mainVi mainVi mainVi" 285px
       "...... ...... ......" 20px
@@ -12,7 +13,7 @@
       "map    map    map   " 691px
       "footer footer footer" 150px
       /20px   1fr    20px; 
-  @include mq(tab) {
+    @include mq(tab) {
     grid-template: 
       "header header header header header" 217px
       "mainVi mainVi mainVi mainVi mainVi" 285px
@@ -22,8 +23,8 @@
       "map    map    map    map    map   " 415px
       "footer footer footer footer footer" 150px
       /40px   1fr    40px   1fr    40px; 
-  }
-  @include mq(pc) {
+    }
+    @include mq(pc) {
     grid-template: 
       "header header header header header menu  " 217px
       "mainVi mainVi mainVi mainVi mainVi menu  " 530px
@@ -33,5 +34,43 @@
       "map    map    map    map    map    menu  " 649px
       "footer footer footer footer footer footer" 150px
       /minmax(111px, 1fr)    32.55%  minmax(40px, auto)    32.55%  minmax(111px, 1fr)    367px; 
+    }
   }
+  &-archive {
+    display: grid;
+    grid-template: 
+      "header header header" 217px
+      "mainVi mainVi mainVi" 285px
+      "...... ...... ......" 20px
+      "...... takeOu ......" 642px
+      "...... ...... ......" 20px
+      "...... eatIn  ......" 642px
+      "...... ...... ......" 49px
+      "map    map    map   " 691px
+      "footer footer footer" 150px
+      /20px   1fr    20px; 
+    @include mq(tab) {
+    grid-template: 
+      "header header header header header" 217px
+      "mainVi mainVi mainVi mainVi mainVi" 285px
+      "...... ...... ...... ...... ......" 40px
+      "...... takeOu ...... eatIn  ......" 681px
+      "...... ...... ...... ...... ......" 40px
+      "map    map    map    map    map   " 415px
+      "footer footer footer footer footer" 150px
+      /40px   1fr    40px   1fr    40px; 
+    }
+    @include mq(pc) {
+    grid-template: 
+      "header header header header header menu  " 217px
+      "mainVi mainVi mainVi mainVi mainVi menu  " 530px
+      "...... ...... ...... ...... ...... menu  " 120px
+      "...... takeOu ...... eatIn  ...... menu  " 1196px
+      "...... ...... ...... ...... ...... menu  " 131px
+      "map    map    map    map    map    menu  " 649px
+      "footer footer footer footer footer footer" 150px
+      /minmax(111px, 1fr)    32.55%  minmax(40px, auto)    32.55%  minmax(111px, 1fr)    367px; 
+    }
+  }
+  
 }

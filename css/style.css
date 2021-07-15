@@ -5,7 +5,8 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* Remove default margin */
@@ -68,9 +69,12 @@ select {
   *,
   *::before,
   *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }
@@ -184,7 +188,8 @@ ol, ul, li {
   .c-btn-header {
     font-size: 3.6rem;
     background-color: #F2EDE9;
-    transform: translate(175px, 70px);
+    -webkit-transform: translate(175px, 70px);
+            transform: translate(175px, 70px);
   }
 }
 
@@ -232,19 +237,38 @@ ol, ul, li {
   width: 10%;
 }
 
-.c-grid {
+.c-grid-front {
+  display: -ms-grid;
   display: grid;
   grid-template: "header header header" 217px "mainVi mainVi mainVi" 285px "...... ...... ......" 20px "...... takeOu ......" 642px "...... ...... ......" 20px "...... eatIn  ......" 642px "...... ...... ......" 49px "map    map    map   " 691px "footer footer footer" 150px /20px   1fr    20px;
 }
 
 @media screen and (min-width: 834px) {
-  .c-grid {
+  .c-grid-front {
     grid-template: "header header header header header" 217px "mainVi mainVi mainVi mainVi mainVi" 285px "...... ...... ...... ...... ......" 40px "...... takeOu ...... eatIn  ......" 681px "...... ...... ...... ...... ......" 40px "map    map    map    map    map   " 415px "footer footer footer footer footer" 150px /40px   1fr    40px   1fr    40px;
   }
 }
 
 @media screen and (min-width: 1553px) {
-  .c-grid {
+  .c-grid-front {
+    grid-template: "header header header header header menu  " 217px "mainVi mainVi mainVi mainVi mainVi menu  " 530px "...... ...... ...... ...... ...... menu  " 120px "...... takeOu ...... eatIn  ...... menu  " 1196px "...... ...... ...... ...... ...... menu  " 131px "map    map    map    map    map    menu  " 649px "footer footer footer footer footer footer" 150px/minmax(111px, 1fr) 32.55% minmax(40px, auto) 32.55% minmax(111px, 1fr) 367px;
+  }
+}
+
+.c-grid-archive {
+  display: -ms-grid;
+  display: grid;
+  grid-template: "header header header" 217px "mainVi mainVi mainVi" 285px "...... ...... ......" 20px "...... takeOu ......" 642px "...... ...... ......" 20px "...... eatIn  ......" 642px "...... ...... ......" 49px "map    map    map   " 691px "footer footer footer" 150px /20px   1fr    20px;
+}
+
+@media screen and (min-width: 834px) {
+  .c-grid-archive {
+    grid-template: "header header header header header" 217px "mainVi mainVi mainVi mainVi mainVi" 285px "...... ...... ...... ...... ......" 40px "...... takeOu ...... eatIn  ......" 681px "...... ...... ...... ...... ......" 40px "map    map    map    map    map   " 415px "footer footer footer footer footer" 150px /40px   1fr    40px   1fr    40px;
+  }
+}
+
+@media screen and (min-width: 1553px) {
+  .c-grid-archive {
     grid-template: "header header header header header menu  " 217px "mainVi mainVi mainVi mainVi mainVi menu  " 530px "...... ...... ...... ...... ...... menu  " 120px "...... takeOu ...... eatIn  ...... menu  " 1196px "...... ...... ...... ...... ...... menu  " 131px "map    map    map    map    map    menu  " 649px "footer footer footer footer footer footer" 150px/minmax(111px, 1fr) 32.55% minmax(40px, auto) 32.55% minmax(111px, 1fr) 367px;
   }
 }
@@ -426,7 +450,6 @@ ol, ul, li {
 
 .p-mainVisual {
   grid-area: mainVi;
-  background-image: url("/img/mainvisual-sp@2x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -440,6 +463,18 @@ ol, ul, li {
   }
 }
 
+.p-mainVisual-front {
+  background-image: url("/img/mainvisual-sp@2x.jpg");
+}
+
+.p-mainVisual-archive {
+  background-image: url("/img/page-title_arcive.jpg");
+}
+
+.p-mainVisual-text {
+  grid-area: mainVi;
+}
+
 .p-nav {
   width: 87vw;
   height: 2716px;
@@ -449,6 +484,7 @@ ol, ul, li {
   top: 0;
   right: -100vw;
   z-index: 100;
+  -webkit-transition: all 1s;
   transition: all 1s;
 }
 
