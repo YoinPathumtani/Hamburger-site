@@ -5,8 +5,7 @@
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Remove default margin */
@@ -69,12 +68,9 @@ select {
   *,
   *::before,
   *::after {
-    -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
-    -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
-    -webkit-transition-duration: 0.01ms !important;
-            transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }
@@ -188,8 +184,7 @@ ol, ul, li {
   .c-btn-header {
     font-size: 3.6rem;
     background-color: #F2EDE9;
-    -webkit-transform: translate(175px, 70px);
-            transform: translate(175px, 70px);
+    transform: translate(175px, 70px);
   }
 }
 
@@ -216,6 +211,12 @@ ol, ul, li {
   float: right;
 }
 
+@media screen and (min-width: 1553px) {
+  .c-btn-x {
+    display: none !important;
+  }
+}
+
 .c-deco-icon {
   display: inline-block;
   font-family: FontAwesome;
@@ -232,7 +233,6 @@ ol, ul, li {
 }
 
 .c-grid {
-  display: -ms-grid;
   display: grid;
   grid-template: "header header header" 217px "mainVi mainVi mainVi" 285px "...... ...... ......" 20px "...... takeOu ......" 642px "...... ...... ......" 20px "...... eatIn  ......" 642px "...... ...... ......" 49px "map    map    map   " 691px "footer footer footer" 150px /20px   1fr    20px;
 }
@@ -443,12 +443,12 @@ ol, ul, li {
 .p-nav {
   width: 87vw;
   height: 2716px;
+  padding: 25px 17px 0;
   background-color: #F2EDE9;
   position: absolute;
   top: 0;
   right: -100vw;
   z-index: 100;
-  -webkit-transition: all 1s;
   transition: all 1s;
 }
 

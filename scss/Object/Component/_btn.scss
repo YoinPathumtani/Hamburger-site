@@ -30,5 +30,8 @@
   }
   &-x {
     float: right;
+    @include mq(pc) {
+      display: none !important;
+    }
   }
 }
