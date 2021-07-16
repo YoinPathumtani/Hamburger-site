@@ -89,7 +89,7 @@ body {
   font-family: "Roboto";
   font-weight: bold;
   line-height: 1;
-  color: #707070;
+  color: #3C2A10;
   overflow-x: hidden;
 }
 
@@ -99,7 +99,7 @@ img {
 
 a {
   text-decoration: none;
-  color: #707070;
+  color: #3C2A10;
 }
 
 button {
@@ -158,6 +158,19 @@ ol, ul, li {
   }
 }
 
+.l-section-pagiNation {
+  grid-area: pagiNa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
 /* サイドバーエリアのスタイルを定義 */
 /* フッターのスタイルを定義 */
 .l-footer {
@@ -174,7 +187,7 @@ ol, ul, li {
 .c-btn-header {
   height: 24px;
   font-size: 2rem;
-  color: #707070;
+  color: #3C2A10;
   float: right;
 }
 
@@ -198,10 +211,10 @@ ol, ul, li {
   width: 78px;
   height: 46px;
   font-family: "M + 1m";
-  color: #707070;
+  color: #3C2A10;
   font-size: 1.6rem;
   background-color: #F2EDE9;
-  border: 1px solid #707070;
+  border: 1px solid #3C2A10;
   border-radius: 10px;
   vertical-align: top;
 }
@@ -222,6 +235,15 @@ ol, ul, li {
   }
 }
 
+.c-btn-menu {
+  width: 48%;
+  height: 42.47px;
+  background-color: #FFF;
+  border-radius: 20px;
+  font-size: 1.6rem;
+  font-family: "M + 1m";
+}
+
 .c-deco-icon {
   display: inline-block;
   font-family: FontAwesome;
@@ -235,6 +257,13 @@ ol, ul, li {
 .c-deco-underLine {
   border-bottom: 4px #FFF solid;
   width: 10%;
+}
+
+.c-deco-prev, .c-deco-next {
+  font-size: 1.6rem;
+  font-weight: normal;
+  font-family: "M + 1m";
+  margin-bottom: 31px;
 }
 
 .c-grid-front {
@@ -258,7 +287,7 @@ ol, ul, li {
 .c-grid-archive {
   display: -ms-grid;
   display: grid;
-  grid-template: "header header header" 217px "mainVi mainVi mainVi" 285px "...... ...... ......" 20px "...... takeOu ......" 642px "...... ...... ......" 20px "...... eatIn  ......" 642px "...... ...... ......" 49px "map    map    map   " 691px "footer footer footer" 150px /20px   1fr    20px;
+  grid-template: "header header header" 217px "mainVi mainVi mainVi" 285px "...... ...... ......" 20px "...... mVtext ......" 358px "...... ...... ......" 20px "...... menu1  ......" 642px "...... ...... ......" 20px "...... menu2  ......" 691px "...... ...... ......" 20px "...... menu3  ......" 691px "...... ...... ......" 20px "...... pagiNa ......" 91px "footer footer footer" 150px /20px   1fr    20px;
 }
 
 @media screen and (min-width: 834px) {
@@ -285,7 +314,7 @@ ol, ul, li {
   width: 230px;
   height: 46px;
   border-radius: 10px;
-  border: 1px solid #707070;
+  border: 1px solid #3C2A10;
 }
 
 @media screen and (min-width: 834px) {
@@ -299,14 +328,13 @@ ol, ul, li {
 }
 
 .c-text-header {
-  color: #707070;
+  color: #3C2A10;
   font-size: 4rem;
 }
 
 .c-text-menu {
   font-family: "M + 1m";
   font-size: 2.4rem;
-  font-weight: bold;
   line-height: 1.5;
 }
 
@@ -315,6 +343,24 @@ ol, ul, li {
   font-size: 2rem;
   font-weight: 200;
   line-height: 1.5;
+}
+
+.c-text-menuName {
+  font-family: "M + 1m";
+  font-size: 2rem;
+  color: #FFF;
+}
+
+.c-text-menuSub {
+  font-family: "M + 1m";
+  font-size: 1.6rem;
+  color: #FFF;
+}
+
+.c-text-menuP {
+  line-height: 1.43;
+  font-weight: normal;
+  width: 82%;
 }
 
 .c-text-mv {
@@ -326,6 +372,29 @@ ol, ul, li {
   position: absolute;
   top: calc(50% - 51px / 2);
   left: 25px;
+  z-index: 1;
+}
+
+.c-text-mv-sub {
+  font-family: "M + 1m";
+  color: #FFF;
+  font-size: 1.6rem;
+  position: absolute;
+  top: calc(68% - 51px / 2);
+  left: 25px;
+  z-index: 1;
+}
+
+.c-text-mv-text {
+  font-family: "M + 1m";
+  font-size: 2.8rem;
+}
+
+.c-text-mv-text-p {
+  font-family: "M + 1m";
+  font-size: 1.6rem;
+  font-weight: normal;
+  line-height: 1.45;
 }
 
 .c-text-box {
@@ -355,13 +424,13 @@ ol, ul, li {
 .c-text-boxInr {
   font-family: "M + 1m";
   font-size: 2.2rem;
-  color: #3C2A10;
+  color: #707070;
 }
 
 .c-text-boxInr-p {
   font-family: "M + 1m";
   font-size: 1.6rem;
-  color: #3C2A10;
+  color: #707070;
   font-weight: normal;
   line-height: 1.4375;
 }
@@ -439,6 +508,51 @@ ol, ul, li {
   }
 }
 
+.p-box__menu1 {
+  grid-area: menu1;
+}
+
+.p-box__menu2 {
+  grid-area: menu2;
+}
+
+.p-box__menu3 {
+  grid-area: menu3;
+}
+
+.p-box__menu-img {
+  background-image: url("/img/menuImg-sp.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 39%;
+}
+
+.p-box__menu-text {
+  height: 61%;
+  background-color: #3C2B1C;
+  padding: 18px;
+  position: relative;
+}
+
+.p-box__menu-text h2 {
+  margin-top: 12px;
+}
+
+.p-box__menu-text h3 {
+  margin-top: 24px;
+}
+
+.p-box__menu-text p {
+  margin-top: 10px;
+}
+
+.p-box__menu-text button {
+  position: absolute;
+  bottom: 12%;
+  left: calc(50% - 26%);
+}
+
 #overlay {
   display: none;
   background-color: rgba(0, 0, 0, 0.5);
@@ -457,22 +571,44 @@ ol, ul, li {
   width: 100%;
 }
 
-@media screen and (min-width: 834px) {
-  .p-mainVisual {
-    background-image: url("/img/mainvisual-pc.jpg");
-  }
-}
-
 .p-mainVisual-front {
   background-image: url("/img/mainvisual-sp@2x.jpg");
 }
 
+@media screen and (min-width: 834px) {
+  .p-mainVisual-front {
+    background-image: url("/img/mainvisual-pc.jpg");
+  }
+}
+
+@media screen and (min-width: 1553px) {
+  .p-mainVisual-front {
+    background-image: url("/img/mainvisual-pc@2x.jpg");
+  }
+}
+
 .p-mainVisual-archive {
   background-image: url("/img/page-title_arcive.jpg");
+  position: relative;
+}
+
+.p-mainVisual-archive::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
 }
 
 .p-mainVisual-text {
-  grid-area: mainVi;
+  grid-area: mVtext;
+}
+
+.p-mainVisual-text p {
+  min-height: 276px;
+  overflow: hidden;
+  padding-top: 30px;
 }
 
 .p-nav {

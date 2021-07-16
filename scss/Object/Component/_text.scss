@@ -3,19 +3,35 @@
     text-align: center;
   }
   &-header {
-    color: $color-font;
+    color: $color-font-header;
     font-size: 4rem;
   }
   &-menu {
     font-family: $font-J;
     font-size: 2.4rem;
-    font-weight: bold;
     line-height: 1.5;
+    color: $color-font-header;
     &-item {
       font-family: $font-J;
       font-size: 2rem;
       font-weight: 200;
       line-height: 1.5;
+      color: $color-font-header;
+    }
+    &Name {
+      font-family: $font-J;
+      font-size: 2rem;
+      color: $color-white;
+    }
+    &Sub {
+      font-family: $font-J;
+      font-size: 1.6rem;
+      color: $color-white;
+    }
+    &P {
+      line-height: 1.43;
+      font-weight: normal;
+      width: 82%;
     }
   }
   &-mv {
@@ -27,6 +43,26 @@
     position: absolute;
     top: calc(50% - 51px / 2);
     left: 25px;
+    z-index: 1;
+    &-sub {
+      font-family: $font-J;
+      color: $color-white;
+      font-size: 1.6rem;
+      position: absolute;
+      top: calc(68% - 51px / 2);
+      left: 25px;
+      z-index: 1;
+    }
+    &-text {
+      font-family: $font-J;
+      font-size: 2.8rem;
+      &-p {
+      font-family: $font-J;
+      font-size: 1.6rem;
+      font-weight: normal;
+      line-height: 1.45;
+      }
+    }
   }
   &-box {
     font-size: 4.1rem;
@@ -48,7 +84,7 @@
     &Inr {
       font-family: $font-J;
       font-size: 2.2rem;
-      color: $color-font-boxInr;
+      color: $color-font;
       &-p {
         font-family: $font-J;
         font-size: 1.6rem;

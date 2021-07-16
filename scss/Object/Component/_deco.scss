@@ -12,4 +12,10 @@
     border-bottom: 4px $color-white solid;
     width: 10%;
   }
+  &-prev, &-next {
+    font-size: 1.6rem;
+    font-weight: normal;
+    font-family: $font-J;
+    margin-bottom: 31px;
+  }
 }

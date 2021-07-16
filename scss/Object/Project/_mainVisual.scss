@@ -14,16 +14,33 @@
   background-size: cover;
   position: relative;
   width: 100%;
-  @include mq(tab) {
-    background-image: url("/img/mainvisual-pc.jpg");
-  }
   &-front {
     background-image: url("/img/mainvisual-sp@2x.jpg");
+    @include mq(tab) {
+      background-image: url('/img/mainvisual-pc.jpg');
+    }
+    @include mq(pc) {
+      background-image: url('/img/mainvisual-pc@2x.jpg');
+    }
   }
   &-archive {
     background-image: url("/img/page-title_arcive.jpg");
+    position: relative;
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: $color-overlay;
+      position: absolute;
+    }
   }
   &-text {
-  grid-area: mainVi;
+    grid-area: mVtext;
+    p {
+      min-height: 276px;
+      overflow: hidden;
+      padding-top: 30px;
+    }
   }
 }

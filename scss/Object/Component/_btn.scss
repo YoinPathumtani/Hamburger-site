@@ -34,4 +34,12 @@
       display: none !important;
     }
   }
+  &-menu {
+    width: 48%;
+    height: 42.47px;
+    background-color: $color-white;
+    border-radius: 20px;
+    font-size: 1.6rem;
+    font-family: $font-J;
+  }
 }
