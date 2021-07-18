@@ -27,7 +27,7 @@
     grid-area: mainVi;
     background-image: url("/img/page-title_arcive.jpg");
     position: relative;
-    &::after {
+    &::before {
       content: "";
       display: block;
       width: 100%;
