@@ -1,6 +1,7 @@
-
+/* グリッドレイアウトを記述 */
 .c-grid {
   &-front {
+    height: 100%;
     display: grid;
     grid-template: 
       "header header header" 217px
@@ -37,6 +38,7 @@
     }
   }
   &-archive {
+    height: 100%;
     display: grid;
     grid-template: 
       "header header header" 217px
@@ -44,11 +46,11 @@
       "...... ...... ......" 20px
       "...... mVtext ......" 358px
       "...... ...... ......" 20px
-      "...... menu1  ......" 642px
+      "...... menu1  ......" 585px
       "...... ...... ......" 20px
-      "...... menu2  ......" 691px
+      "...... menu2  ......" 585px
       "...... ...... ......" 20px
-      "...... menu3  ......" 691px
+      "...... menu3  ......" 585px
       "...... ...... ......" 20px
       "...... pagiNa ......" 91px
       "footer footer footer" 150px
@@ -57,24 +59,33 @@
     grid-template: 
       "header header header header header" 217px
       "mainVi mainVi mainVi mainVi mainVi" 285px
-      "...... ...... ...... ...... ......" 40px
-      "...... takeOu ...... eatIn  ......" 681px
-      "...... ...... ...... ...... ......" 40px
-      "map    map    map    map    map   " 415px
+      "...... ...... ...... ...... ......" 20px
+      "mVtext mVtext mVtext mVtext mVtext" 285px
+      "...... ...... ...... ...... ......" 20px
+      "...... menu1  menu1  menu1  ......" 355px
+      "...... ...... ...... ...... ......" 20px
+      "...... menu2  menu2  menu2  ......" 355px
+      "...... ...... ...... ...... ......" 20px
+      "...... menu3  menu3  menu3  ......" 355px
+      "...... pagiNa pagiNa pagiNa ......" 170px
       "footer footer footer footer footer" 150px
-      /40px   1fr    40px   1fr    40px; 
+      /40px   1fr    1fr    1fr    40px; 
     }
     @include mq(pc) {
     grid-template: 
       "header header header header header menu  " 217px
-      "mainVi mainVi mainVi mainVi mainVi menu  " 530px
-      "...... ...... ...... ...... ...... menu  " 120px
-      "...... takeOu ...... eatIn  ...... menu  " 1196px
-      "...... ...... ...... ...... ...... menu  " 131px
-      "map    map    map    map    map    menu  " 649px
+      "mainVi mainVi mainVi mainVi mainVi menu  " 239px
+      "...... ...... ...... ...... ...... menu  " 40px
+      "...... mVtext mVtext mVtext ...... menu  " 190px
+      "...... ...... ...... ...... ...... menu  " 40px
+      "...... menu1  menu1  menu1  ...... menu  " 471px
+      "...... ...... ...... ...... ...... menu  " 30px
+      "...... menu2  menu2  menu2  ...... menu  " 471px
+      "...... ...... ...... ...... ...... menu  " 30px
+      "...... menu3  menu3  menu3  ...... menu  " 471px
+      "...... pagiNa pagiNa pagiNa ...... menu  " 250px
       "footer footer footer footer footer footer" 150px
       /minmax(111px, 1fr)    32.55%  minmax(40px, auto)    32.55%  minmax(111px, 1fr)    367px; 
     }
   }
-  
 }

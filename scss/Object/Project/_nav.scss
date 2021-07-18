@@ -1,6 +1,6 @@
 .p-nav {
   width: 87vw;
-  height: 2716px;
+  height: 100%;
   padding: 25px 17px 0;
   background-color: $color-btn;
   position: absolute;
@@ -10,12 +10,10 @@
   transition: all 1s;
   @include mq(tab) {
     width: 44vw;
-    height: 1828px;
   }
   @include mq(pc) {
     position: static;
     width: auto;
-    height: 100%;
     grid-area: menu;
   }
 }
