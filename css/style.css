@@ -227,6 +227,7 @@ ol, ul, li {
 
 .c-btn-x {
   float: right;
+  color: #707070;
 }
 
 @media screen and (min-width: 1553px) {

@@ -30,6 +30,7 @@
   }
   &-x {
     float: right;
+    color: $color-font-header;
     @include mq(pc) {
       display: none !important;
     }
