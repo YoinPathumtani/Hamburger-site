@@ -2,7 +2,7 @@
   &-header {
     height: 24px;
     font-size: 2rem;
-    color: $color-font;
+    color: $color-font-header;
     float: right;
     @include mq(tab) {
       font-size: 3.4rem;

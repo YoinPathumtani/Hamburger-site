@@ -187,7 +187,7 @@ ol, ul, li {
 .c-btn-header {
   height: 24px;
   font-size: 2rem;
-  color: #3C2A10;
+  color: #707070;
   float: right;
 }
 
@@ -328,7 +328,7 @@ ol, ul, li {
 }
 
 .c-text-header {
-  color: #3C2A10;
+  color: #707070;
   font-size: 4rem;
 }
 
@@ -336,6 +336,7 @@ ol, ul, li {
   font-family: "M + 1m";
   font-size: 2.4rem;
   line-height: 1.5;
+  color: #707070;
 }
 
 .c-text-menu-item {
@@ -343,6 +344,7 @@ ol, ul, li {
   font-size: 2rem;
   font-weight: 200;
   line-height: 1.5;
+  color: #707070;
 }
 
 .c-text-menuName {
@@ -424,13 +426,12 @@ ol, ul, li {
 .c-text-boxInr {
   font-family: "M + 1m";
   font-size: 2.2rem;
-  color: #707070;
+  color: #3C2A10;
 }
 
 .c-text-boxInr-p {
   font-family: "M + 1m";
   font-size: 1.6rem;
-  color: #707070;
   font-weight: normal;
   line-height: 1.4375;
 }
