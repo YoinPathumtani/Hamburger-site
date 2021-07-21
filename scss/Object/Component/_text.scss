@@ -5,6 +5,9 @@
   &-header {
     color: $color-font-header;
     font-size: 4rem;
+    &:hover {
+      opacity: .7;
+    }
   }
   &-menu {
     font-family: $font-J;
@@ -98,6 +101,10 @@
     color: $color-white;
     font-weight: normal;
     line-height: 1;
+    &:hover {
+      color: $color-menu;
+      font-weight: bold;
+    }
   }
   &-footerSmall {
     font-family: $font-J;

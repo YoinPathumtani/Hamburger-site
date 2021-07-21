@@ -4,6 +4,10 @@
     font-size: 2rem;
     color: $color-font-header;
     float: right;
+    cursor: pointer;
+    &:hover {
+      opacity: .7;
+    }
     @include mq(tab) {
       font-size: 3.4rem;
     }
@@ -24,6 +28,9 @@
     border: 1px solid $color-font;
     border-radius: 10px;
     vertical-align: top;
+    &:hover {
+      opacity: .7;
+    }
     @include mq(tab) {
       width: 136px;
     }

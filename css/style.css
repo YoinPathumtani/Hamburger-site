@@ -5,8 +5,7 @@
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Remove default margin */
@@ -69,12 +68,9 @@ select {
   *,
   *::before,
   *::after {
-    -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
-    -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
-    -webkit-transition-duration: 0.01ms !important;
-            transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }
@@ -162,15 +158,9 @@ ol, ul, li {
 
 .l-section-pagiNation {
   grid-area: pagiNa;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 /* サイドバーエリアのスタイルを定義 */
@@ -191,6 +181,11 @@ ol, ul, li {
   font-size: 2rem;
   color: #707070;
   float: right;
+  cursor: pointer;
+}
+
+.c-btn-header:hover {
+  opacity: .7;
 }
 
 @media screen and (min-width: 834px) {
@@ -203,8 +198,7 @@ ol, ul, li {
   .c-btn-header {
     font-size: 3.6rem;
     background-color: #F2EDE9;
-    -webkit-transform: translate(175px, 70px);
-            transform: translate(175px, 70px);
+    transform: translate(175px, 70px);
   }
 }
 
@@ -219,6 +213,10 @@ ol, ul, li {
   border: 1px solid #3C2A10;
   border-radius: 10px;
   vertical-align: top;
+}
+
+.c-btn-serch:hover {
+  opacity: .7;
 }
 
 @media screen and (min-width: 834px) {
@@ -272,7 +270,6 @@ ol, ul, li {
 /* グリッドレイアウトを記述 */
 .c-grid-front {
   height: 100%;
-  display: -ms-grid;
   display: grid;
   grid-template: "header header header" 217px "mainVi mainVi mainVi" 285px "...... ...... ......" 20px "...... takeOu ......" 642px "...... ...... ......" 20px "...... eatIn  ......" 642px "...... ...... ......" 49px "map    map    map   " 691px "footer footer footer" 150px /20px   1fr    20px;
 }
@@ -285,13 +282,12 @@ ol, ul, li {
 
 @media screen and (min-width: 1553px) {
   .c-grid-front {
-    grid-template: "header header header header header menu  " 217px "mainVi mainVi mainVi mainVi mainVi menu  " 530px "...... ...... ...... ...... ...... menu  " 120px "...... takeOu ...... eatIn  ...... menu  " 1196px "...... ...... ...... ...... ...... menu  " 131px "map    map    map    map    map    menu  " 649px "footer footer footer footer footer footer" 150px/minmax(111px, 1fr) 32.55% minmax(40px, auto) 32.55% minmax(111px, 1fr) 367px;
+    grid-template: "header header header header header menu  " 217px "mainVi mainVi mainVi mainVi mainVi menu  " 530px "...... ...... ...... ...... ...... menu  " 120px "...... takeOu ...... eatIn  ...... menu  " 1196px "...... ...... ...... ...... ...... menu  " 131px "map    map    map    map    map    menu  " 649px "footer footer footer footer footer footer" 150px/minmax(111px, 1fr) 625px minmax(40px, auto) 625px minmax(111px, 1fr) 367px;
   }
 }
 
 .c-grid-archive {
   height: 100%;
-  display: -ms-grid;
   display: grid;
   grid-template: "header header header" 217px "mainVi mainVi mainVi" 285px "...... ...... ......" 20px "...... mVtext ......" 358px "...... ...... ......" 20px "...... menu1  ......" 585px "...... ...... ......" 20px "...... menu2  ......" 585px "...... ...... ......" 20px "...... menu3  ......" 585px "...... ...... ......" 20px "...... pagiNa ......" 91px "footer footer footer" 150px /20px   1fr    20px;
 }
@@ -336,6 +332,10 @@ ol, ul, li {
 .c-text-header {
   color: #707070;
   font-size: 4rem;
+}
+
+.c-text-header:hover {
+  opacity: .7;
 }
 
 .c-text-menu {
@@ -449,6 +449,11 @@ ol, ul, li {
   line-height: 1;
 }
 
+.c-text-footerLink:hover {
+  color: #3C2B1C;
+  font-weight: bold;
+}
+
 .c-text-footerSmall {
   font-family: "M + 1m";
   font-size: 1.4rem;
@@ -483,6 +488,10 @@ ol, ul, li {
   padding: 19px 10px;
 }
 
+.p-box__inr:hover {
+  opacity: .7;
+}
+
 @media screen and (min-width: 1553px) {
   .p-box__inr {
     height: 174px;
@@ -515,21 +524,13 @@ ol, ul, li {
 }
 
 .p-box__menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 @media screen and (min-width: 834px) {
   .p-box__menu {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
 }
 
@@ -658,7 +659,6 @@ ol, ul, li {
   top: 0;
   right: -100vw;
   z-index: 100;
-  -webkit-transition: all 1s;
   transition: all 1s;
 }
 
