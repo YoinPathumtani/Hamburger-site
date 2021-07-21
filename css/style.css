@@ -5,7 +5,8 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* Remove default margin */
@@ -68,14 +69,18 @@ select {
   *,
   *::before,
   *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }
 
 /* プロジェクトにおける変数を定義 */
+/* メディアクエリなど */
 /* プロジェクトにおける基本的なスタイルを定義 */
 html {
   font-size: 62.5%;
@@ -83,12 +88,18 @@ html {
 }
 
 body {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   line-height: 1;
   color: #3C2A10;
   overflow-x: hidden;
   height: 100%;
+}
+
+@media screen and (min-width: 1553px) {
+  body {
+    position: static;
+  }
 }
 
 img {
@@ -111,32 +122,52 @@ ol, ul, li {
   list-style: none;
 }
 
-/* メディアクエリなど */
 /* ヘッダーのスタイルを定義 */
 .l-header {
   grid-area: header;
   background-color: #FFF7EF;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 16px;
+}
+
+@media screen and (min-width: 1553px) {
+  .l-header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.l-header button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }
 
 .l-header h1 {
-  width: 203px;
-  margin: 28px auto 0;
+  width: 100%;
+  text-align: center;
 }
 
 @media screen and (min-width: 1553px) {
   .l-header h1 {
-    margin: 67px 0 0 65px;
+    width: auto;
   }
 }
 
 .l-header form {
-  padding-top: 39px;
-}
-
-@media screen and (min-width: 1553px) {
-  .l-header form {
-    padding-top: 12px;
-  }
+  vertical-align: bottom;
 }
 
 /* メインエリアのスタイルを定義 */
@@ -158,9 +189,15 @@ ol, ul, li {
 
 .l-section-pagiNation {
   grid-area: pagiNa;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 /* サイドバーエリアのスタイルを定義 */
@@ -180,7 +217,6 @@ ol, ul, li {
   height: 24px;
   font-size: 2rem;
   color: #707070;
-  float: right;
   cursor: pointer;
 }
 
@@ -198,7 +234,8 @@ ol, ul, li {
   .c-btn-header {
     font-size: 3.6rem;
     background-color: #F2EDE9;
-    transform: translate(175px, 70px);
+    -webkit-transform: translate(175px, 70px);
+            transform: translate(175px, 70px);
   }
 }
 
@@ -213,6 +250,7 @@ ol, ul, li {
   border: 1px solid #3C2A10;
   border-radius: 10px;
   vertical-align: top;
+  cursor: pointer;
 }
 
 .c-btn-serch:hover {
@@ -268,8 +306,12 @@ ol, ul, li {
 }
 
 /* グリッドレイアウトを記述 */
+.c-grid {
+  /* ここからアーカイブページ */
+}
+
 .c-grid-front {
-  height: 100%;
+  display: -ms-grid;
   display: grid;
   grid-template: "header header header" 217px "mainVi mainVi mainVi" 285px "...... ...... ......" 20px "...... takeOu ......" 642px "...... ...... ......" 20px "...... eatIn  ......" 642px "...... ...... ......" 49px "map    map    map   " 691px "footer footer footer" 150px /20px   1fr    20px;
 }
@@ -287,9 +329,9 @@ ol, ul, li {
 }
 
 .c-grid-archive {
-  height: 100%;
+  display: -ms-grid;
   display: grid;
-  grid-template: "header header header" 217px "mainVi mainVi mainVi" 285px "...... ...... ......" 20px "...... mVtext ......" 358px "...... ...... ......" 20px "...... menu1  ......" 585px "...... ...... ......" 20px "...... menu2  ......" 585px "...... ...... ......" 20px "...... menu3  ......" 585px "...... ...... ......" 20px "...... pagiNa ......" 91px "footer footer footer" 150px /20px   1fr    20px;
+  grid-template: "header header header" 217px "mainVi mainVi mainVi" 285px "...... ...... ......" 20px "...... mVtext ......" 355px "...... ...... ......" 20px "...... menu1  ......" 585px "...... ...... ......" 20px "...... menu2  ......" 585px "...... ...... ......" 20px "...... menu3  ......" 585px "...... ...... ......" 20px "...... pagiNa ......" 91px "footer footer footer" 150px /20px   1fr    20px;
 }
 
 @media screen and (min-width: 834px) {
@@ -304,16 +346,14 @@ ol, ul, li {
   }
 }
 
-@media screen and (min-width: 1553px) {
-  .c-input {
-    position: absolute;
-    top: 67px;
-    right: 400px;
-  }
+.c-input-form {
+  display: block;
+  white-space: nowrap;
 }
 
 .c-input-header {
   width: 230px;
+  width: 100%;
   height: 46px;
   border-radius: 10px;
   border: 1px solid #3C2A10;
@@ -325,8 +365,8 @@ ol, ul, li {
   }
 }
 
-.c-text-ctr {
-  text-align: center;
+.c-text {
+  /* これよりArchiveページ仕様 */
 }
 
 .c-text-header {
@@ -336,6 +376,12 @@ ol, ul, li {
 
 .c-text-header:hover {
   opacity: .7;
+}
+
+@media screen and (min-width: 1553px) {
+  .c-text-header {
+    font-size: 6.4rem;
+  }
 }
 
 .c-text-menu {
@@ -351,6 +397,11 @@ ol, ul, li {
   font-weight: 200;
   line-height: 1.5;
   color: #707070;
+}
+
+.c-text-menu-item:hover {
+  opacity: .7;
+  font-weight: bold;
 }
 
 .c-text-menuName {
@@ -376,10 +427,16 @@ ol, ul, li {
   color: #FFF;
   font-size: 3.6rem;
   height: 51px;
-  width: 216px;
+  width: 100%;
   position: absolute;
   top: calc(50% - 51px / 2);
   left: 25px;
+}
+
+@media screen and (min-width: 1553px) {
+  .c-text-mv {
+    font-size: 4rem;
+  }
 }
 
 .c-text-mv-sub {
@@ -462,6 +519,24 @@ ol, ul, li {
   display: block;
 }
 
+.c-text-textBoxTitle {
+  font-size: 2.8rem;
+  font-weight: bold;
+  font-family: "M + 1m";
+}
+
+.c-text-textBox-p {
+  font-size: 1.6rem;
+  font-family: "M + 1m";
+  line-height: 1.43;
+  overflow: hidden;
+}
+
+.c-img-menu {
+  width: 100%;
+  height: 40%;
+}
+
 .p-box {
   padding: 15px 10px;
   position: relative;
@@ -524,13 +599,21 @@ ol, ul, li {
 }
 
 .p-box__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media screen and (min-width: 834px) {
   .p-box__menu {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -560,35 +643,31 @@ ol, ul, li {
   }
 }
 
-.p-box__menu-text {
-  height: 61%;
+.p-box-text {
+  grid-area: mVtext;
+}
+
+.p-box-menuCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #3C2B1C;
-  padding: 18px;
-  position: relative;
 }
 
-@media screen and (min-width: 834px) {
-  .p-box__menu-text {
-    height: 100%;
-  }
+.p-box-menuCard1 {
+  grid-area: menu1;
 }
 
-.p-box__menu-text h2 {
-  margin-top: 12px;
+.p-box-menuCard2 {
+  grid-area: menu2;
 }
 
-.p-box__menu-text h3 {
-  margin-top: 24px;
-}
-
-.p-box__menu-text p {
-  margin-top: 10px;
-}
-
-.p-box__menu-text button {
-  position: absolute;
-  bottom: 12%;
-  left: calc(50% - 26%);
+.p-box-menuCard3 {
+  grid-area: menu3;
 }
 
 #overlay {
@@ -601,6 +680,7 @@ ol, ul, li {
 }
 
 .p-mainVisual {
+  grid-area: mainVi;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -609,7 +689,6 @@ ol, ul, li {
 }
 
 .p-mainVisual-front {
-  grid-area: mainVi;
   background-image: url("/img/mainvisual-sp@2x.jpg");
 }
 
@@ -626,7 +705,6 @@ ol, ul, li {
 }
 
 .p-mainVisual-archive {
-  grid-area: mainVi;
   background-image: url("/img/page-title_arcive.jpg");
   position: relative;
 }
@@ -655,11 +733,13 @@ ol, ul, li {
   height: 100%;
   padding: 25px 17px 0;
   background-color: #F2EDE9;
+  overflow-y: scroll;
   position: absolute;
   top: 0;
   right: -100vw;
   z-index: 100;
-  transition: all 1s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 @media screen and (min-width: 834px) {

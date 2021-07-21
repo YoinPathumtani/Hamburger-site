@@ -67,29 +67,22 @@
       @include mq(tab) {
         height: 100%;
       }
+    }  
+  }&-text {
+    grid-area: mVtext;
+  }
+  &-menuCard {
+    display: flex;
+    flex-direction: column;
+    background-color: $color-menu;
+    &1 {
+      grid-area: menu1;
     }
-    &-text {
-      height: 61%;
-      background-color: $color-menu;
-      padding: 18px;
-      position: relative;
-      @include mq(tab) {
-        height: 100%;
-      }
-      h2 {
-        margin-top: 12px;
-      }
-      h3 {
-        margin-top: 24px;
-      }
-      p {
-        margin-top: 10px;
-      }
-      button {
-        position: absolute;
-        bottom: 12%;
-        left: calc(50% - 26%);
-      }
+    &2 {
+      grid-area: menu2;
+    }
+    &3 {
+      grid-area: menu3;
     }
   }
 }

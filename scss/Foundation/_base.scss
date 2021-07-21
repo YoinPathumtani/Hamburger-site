@@ -15,6 +15,10 @@ body {
   color: $color-font;
   overflow-x: hidden;
   height: 100%;
+  @include mq(pc) {
+    position: static;
+  }
+  
 }
 img {
   width: 100%;

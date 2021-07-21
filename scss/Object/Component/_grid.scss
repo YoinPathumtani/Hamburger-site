@@ -1,7 +1,6 @@
 /* グリッドレイアウトを記述 */
 .c-grid {
   &-front {
-    height: 100%;
     display: grid;
     grid-template: 
       "header header header" 217px
@@ -37,14 +36,14 @@
       /minmax(111px, 1fr)    625px  minmax(40px, auto)    625px  minmax(111px, 1fr)    367px; 
     }
   }
+  /* ここからアーカイブページ */
   &-archive {
-    height: 100%;
     display: grid;
     grid-template: 
       "header header header" 217px
       "mainVi mainVi mainVi" 285px
       "...... ...... ......" 20px
-      "...... mVtext ......" 358px
+      "...... mVtext ......" 355px
       "...... ...... ......" 20px
       "...... menu1  ......" 585px
       "...... ...... ......" 20px

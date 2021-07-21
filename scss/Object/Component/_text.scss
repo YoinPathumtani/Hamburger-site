@@ -1,12 +1,12 @@
 .c-text {
-  &-ctr {
-    text-align: center;
-  }
   &-header {
     color: $color-font-header;
     font-size: 4rem;
     &:hover {
       opacity: .7;
+    }
+    @include mq(pc) {
+      font-size: 6.4rem;
     }
   }
   &-menu {
@@ -20,6 +20,10 @@
       font-weight: 200;
       line-height: 1.5;
       color: $color-font-header;
+      &:hover {
+        opacity: .7;
+        font-weight: bold;
+      }
     }
     &Name {
       font-family: $font-J;
@@ -42,10 +46,13 @@
     color: $color-white;
     font-size: 3.6rem;
     height: 51px;
-    width: 216px;
+    width: 100%;
     position: absolute;
     top: calc(50% - 51px / 2);
     left: 25px;
+    @include mq(pc) {
+      font-size: 4rem;
+    }
     &-sub {
       font-family: $font-J;
       color: $color-white;
@@ -112,5 +119,20 @@
     color: $color-white;
     font-weight: normal;
     display: block;
+  }
+
+  /* これよりArchiveページ仕様 */
+  &-textBox{
+    &Title {
+      font-size: 2.8rem;
+      font-weight: bold;
+      font-family: $font-J;
+    }
+    &-p {
+      font-size: 1.6rem;
+      font-family: $font-J;
+      line-height: 1.43;
+      overflow: hidden;
+    }
   }
 }

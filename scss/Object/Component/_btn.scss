@@ -3,7 +3,6 @@
     height: 24px;
     font-size: 2rem;
     color: $color-font-header;
-    float: right;
     cursor: pointer;
     &:hover {
       opacity: .7;
@@ -28,6 +27,7 @@
     border: 1px solid $color-font;
     border-radius: 10px;
     vertical-align: top;
+    cursor: pointer;
     &:hover {
       opacity: .7;
     }

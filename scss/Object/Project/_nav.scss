@@ -3,11 +3,12 @@
   height: 100%;
   padding: 25px 17px 0;
   background-color: $color-btn;
+  overflow-y: scroll;
   position: absolute;
   top: 0;
   right: -100vw;
   z-index: 100;
-  transition: all 1s;
+  transition: all .5s;
   @include mq(tab) {
     width: 44vw;
   }

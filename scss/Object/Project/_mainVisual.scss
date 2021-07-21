@@ -8,13 +8,13 @@
 }
 
 .p-mainVisual {
+  grid-area: mainVi;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
   width: 100%;
   &-front {
-    grid-area: mainVi;
     background-image: url("/img/mainvisual-sp@2x.jpg");
     @include mq(tab) {
       background-image: url('/img/mainvisual-pc.jpg');
@@ -24,7 +24,6 @@
     }
   }
   &-archive {
-    grid-area: mainVi;
     background-image: url("/img/page-title_arcive.jpg");
     position: relative;
     &::before {
