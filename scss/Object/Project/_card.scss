@@ -41,11 +41,29 @@
     }
   }
   &-menu {
-    width: 894px;
+    height: 585px;
     background-color: $color-bg-box;
     img {
       display: block;
       height: 40%;
+    }
+    &Text {
+      padding: 17px;
+      height: 60%;
+      position: relative;
+      h2, h3 {
+        margin-top: 5%;
+      }
+      p {
+        margin-top: 10px;
+        height: 40%;
+        overflow-y: hidden;
+      }
+      a {
+        position: absolute;
+        bottom: 10%;
+        left: calc(50% - 25%);
+      }
     }
   }
 }

@@ -258,6 +258,15 @@ ol, ul, li {
   }
 }
 
+.c-button-detail {
+  display: inline-block;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+  width: 50%;
+}
+
 .c-deco-underLine {
   position: relative;
 }
@@ -375,6 +384,25 @@ ol, ul, li {
 .c-text-card-p {
   font-size: 1.6rem;
   color: #3C2A10;
+}
+
+.c-text-card-menu {
+  color: #fff;
+  font-weight: bold;
+}
+
+.c-text-card-menuName {
+  font-size: 2rem;
+}
+
+.c-text-card-menuSub {
+  font-size: 1.6rem;
+}
+
+.c-text-card-menu-p {
+  font-size: 1.6rem;
+  font-weight: normal;
+  width: 80%;
 }
 
 .c-text-card__inrTitle {
@@ -502,13 +530,35 @@ ol, ul, li {
 }
 
 .p-card-menu {
-  width: 894px;
+  height: 585px;
   background-color: #3C2B1C;
 }
 
 .p-card-menu img {
   display: block;
   height: 40%;
+}
+
+.p-card-menuText {
+  padding: 17px;
+  height: 60%;
+  position: relative;
+}
+
+.p-card-menuText h2, .p-card-menuText h3 {
+  margin-top: 5%;
+}
+
+.p-card-menuText p {
+  margin-top: 10px;
+  height: 40%;
+  overflow-y: hidden;
+}
+
+.p-card-menuText a {
+  position: absolute;
+  bottom: 10%;
+  left: calc(50% - 25%);
 }
 
 .p-footer {

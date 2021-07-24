@@ -37,6 +37,21 @@
       font-size: 1.6rem;
       color: $color-font-main;
     }
+    &-menu {
+      color: $color-font-white;
+      font-weight: bold;
+      &Name {
+        font-size: 2rem;
+      }
+      &Sub {
+        font-size: 1.6rem;
+      }
+      &-p {
+        font-size: 1.6rem;
+        font-weight: normal;
+        width: 80%;
+      }
+    }
     &__inr {
       &Title {
         font-size: 2.2rem;
