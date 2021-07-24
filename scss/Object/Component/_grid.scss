@@ -1,90 +1,22 @@
-/* グリッドレイアウトを記述 */
 .c-grid {
-  &-front {
+  @include pc {
     display: grid;
-    grid-template: 
-      "header header header" 217px
-      "mainVi mainVi mainVi" 285px
-      "...... ...... ......" 20px
-      "...... takeOu ......" 642px
-      "...... ...... ......" 20px
-      "...... eatIn  ......" 642px
-      "...... ...... ......" 49px
-      "map    map    map   " 691px
-      "footer footer footer" 150px
-      /20px   1fr    20px; 
-    @include mq(tab) {
-    grid-template: 
-      "header header header header header" 217px
-      "mainVi mainVi mainVi mainVi mainVi" 285px
-      "...... ...... ...... ...... ......" 40px
-      "...... takeOu ...... eatIn  ......" 681px
-      "...... ...... ...... ...... ......" 40px
-      "map    map    map    map    map   " 415px
-      "footer footer footer footer footer" 150px
-      /40px   1fr    40px   1fr    40px; 
+    grid-template:
+      "header aside"  217px
+      "main   aside"  1fr
+      "footer footer" 150px
+    /  80%    20%;
+    .l-header {
+      grid-area: header;
     }
-    @include mq(pc) {
-    grid-template: 
-      "header header header header header menu  " 217px
-      "mainVi mainVi mainVi mainVi mainVi menu  " 530px
-      "...... ...... ...... ...... ...... menu  " 120px
-      "...... takeOu ...... eatIn  ...... menu  " 1196px
-      "...... ...... ...... ...... ...... menu  " 131px
-      "map    map    map    map    map    menu  " 649px
-      "footer footer footer footer footer footer" 150px
-      /minmax(111px, 1fr)    625px  minmax(40px, auto)    625px  minmax(111px, 1fr)    367px; 
+    .l-aside {
+      grid-area: aside;
     }
-  }
-  /* ここからアーカイブページ */
-  &-archive {
-    display: grid;
-    grid-template: 
-      "header header header" 217px
-      "mainVi mainVi mainVi" 285px
-      "...... ...... ......" 20px
-      "...... mVtext ......" 355px
-      "...... ...... ......" 20px
-      "...... menu1  ......" 585px
-      "...... ...... ......" 20px
-      "...... menu2  ......" 585px
-      "...... ...... ......" 20px
-      "...... menu3  ......" 585px
-      "...... ...... ......" 20px
-      "...... pagiNa ......" 91px
-      "footer footer footer" 150px
-      /20px   1fr    20px; 
-    @include mq(tab) {
-    grid-template: 
-      "header header header header header" 217px
-      "mainVi mainVi mainVi mainVi mainVi" 285px
-      "...... ...... ...... ...... ......" 20px
-      "mVtext mVtext mVtext mVtext mVtext" 285px
-      "...... ...... ...... ...... ......" 20px
-      "...... menu1  menu1  menu1  ......" 355px
-      "...... ...... ...... ...... ......" 20px
-      "...... menu2  menu2  menu2  ......" 355px
-      "...... ...... ...... ...... ......" 20px
-      "...... menu3  menu3  menu3  ......" 355px
-      "...... pagiNa pagiNa pagiNa ......" 170px
-      "footer footer footer footer footer" 150px
-      /40px   1fr    1fr    1fr    40px; 
+    .l-main {
+      grid-area: main;
     }
-    @include mq(pc) {
-    grid-template: 
-      "header header header header header menu  " 217px
-      "mainVi mainVi mainVi mainVi mainVi menu  " 239px
-      "...... ...... ...... ...... ...... menu  " 40px
-      "...... mVtext mVtext mVtext ...... menu  " 190px
-      "...... ...... ...... ...... ...... menu  " 40px
-      "...... menu1  menu1  menu1  ...... menu  " 471px
-      "...... ...... ...... ...... ...... menu  " 30px
-      "...... menu2  menu2  menu2  ...... menu  " 471px
-      "...... ...... ...... ...... ...... menu  " 30px
-      "...... menu3  menu3  menu3  ...... menu  " 471px
-      "...... pagiNa pagiNa pagiNa ...... menu  " 250px
-      "footer footer footer footer footer footer" 150px
-      /minmax(111px, 1fr)    32.55%  minmax(40px, auto)    32.55%  minmax(111px, 1fr)    367px; 
+    .l-footer {
+      grid-area: footer;
     }
   }
 }

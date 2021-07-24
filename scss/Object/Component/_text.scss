@@ -1,138 +1,72 @@
 .c-text {
-  &-header {
-    color: $color-font-header;
+  &-siteTitle {
     font-size: 4rem;
+    font-weight: bold;
+    @include pc {
+      font-size: 6.4rem;
+    }
     &:hover {
       opacity: .7;
     }
-    @include mq(pc) {
-      font-size: 6.4rem;
+  }
+  &-mvTitle {
+    color: $color-font-white;
+    font-size: 3.6rem;
+    font-weight: bold;
+  }
+  &-card {
+    &Title {
+      color: $color-font-white;
+      font-size: 4.1rem;
+      font-weight: bold;
+    }
+    &__inr {
+      &Title {
+        font-size: 2.2rem;
+        font-weight: bold;
+        color: $color-font-main;
+      }
+      &P {
+        font-size: 1.6rem;
+        color: $color-font-main;
+      }
+
+    }
+  }
+  &-map {
+    color: $color-font-white;
+    font-weight: bold;
+    &Title {
+      font-size: 3rem;
+      @include pc {
+        font-size: 3.6rem;
+      }
+    }
+    &p {
+      font-size: 1.4rem;
+      line-height: 2.35;
+    }
+  }
+  &-footer {
+    color: $color-font-white;
+    font-size: 1.4rem;
+    transition: all .2s;
+    &:hover {
+      color: $color-font-main;
+    }
+    &__link {
+      font-size: 2rem;
     }
   }
   &-menu {
-    font-family: $font-J;
     font-size: 2.4rem;
-    line-height: 1.5;
-    color: $color-font-header;
+    font-weight: bold;
     &-item {
-      font-family: $font-J;
       font-size: 2rem;
-      font-weight: 200;
-      line-height: 1.5;
-      color: $color-font-header;
+      font-weight: normal;
       &:hover {
         opacity: .7;
-        font-weight: bold;
       }
-    }
-    &Name {
-      font-family: $font-J;
-      font-size: 2rem;
-      color: $color-white;
-    }
-    &Sub {
-      font-family: $font-J;
-      font-size: 1.6rem;
-      color: $color-white;
-    }
-    &P {
-      line-height: 1.43;
-      font-weight: normal;
-      width: 82%;
-    }
-  }
-  &-mv {
-    font-family: $font-J;
-    color: $color-white;
-    font-size: 3.6rem;
-    height: 51px;
-    width: 100%;
-    position: absolute;
-    top: calc(50% - 51px / 2);
-    left: 25px;
-    @include mq(pc) {
-      font-size: 4rem;
-    }
-    &-sub {
-      font-family: $font-J;
-      color: $color-white;
-      font-size: 1.6rem;
-      position: absolute;
-      top: calc(68% - 51px / 2);
-      left: 25px;
-      z-index: 1;
-    }
-    &-text {
-      font-family: $font-J;
-      font-size: 2.8rem;
-      &-p {
-      font-family: $font-J;
-      font-size: 1.6rem;
-      font-weight: normal;
-      line-height: 1.45;
-      }
-    }
-  }
-  &-box {
-    font-size: 4.1rem;
-    color: $color-white;
-    &-map {
-      font-family: $font-J;
-      font-size: 3rem;
-      &-p {
-        font-family: $font-J;
-        font-size: 1.4rem;
-        color: $color-white;
-        line-height: 2.36;
-        overflow: hidden;
-        @include mq(pc) {
-          font-size: 1.6rem;
-        }
-      }
-    }
-    &Inr {
-      font-family: $font-J;
-      font-size: 2.2rem;
-      color: $color-font;
-      &-p {
-        font-family: $font-J;
-        font-size: 1.6rem;
-        font-weight: normal;
-        line-height: 1.4375;
-      }
-    }
-  }
-  &-footerLink {
-    font-family: $font-J;
-    font-size: 2rem;
-    color: $color-white;
-    font-weight: normal;
-    line-height: 1;
-    &:hover {
-      color: $color-menu;
-      font-weight: bold;
-    }
-  }
-  &-footerSmall {
-    font-family: $font-J;
-    font-size: 1.4rem;
-    color: $color-white;
-    font-weight: normal;
-    display: block;
-  }
-
-  /* これよりArchiveページ仕様 */
-  &-textBox{
-    &Title {
-      font-size: 2.8rem;
-      font-weight: bold;
-      font-family: $font-J;
-    }
-    &-p {
-      font-size: 1.6rem;
-      font-family: $font-J;
-      line-height: 1.43;
-      overflow: hidden;
     }
   }
 }

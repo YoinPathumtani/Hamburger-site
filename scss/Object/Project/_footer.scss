@@ -1,0 +1,16 @@
+.p-footer {
+  height: 150px;
+  background-image: url('/images/index/p-footer-bg.png');
+  &__nav {
+    padding: 39px;
+    display: flex;
+    justify-content: center;
+    li {
+      padding: 10px;
+      line-height: .5rem;
+    }
+    li:first-of-type {
+      border-right: 2px solid $color-font-white;
+    }
+  }
+}

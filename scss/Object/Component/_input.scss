@@ -1,16 +1,34 @@
 .c-input {
-  &-form {
-    display: block;
-    white-space:nowrap;
-  }
-  &-header {
-    width: 230px;
-    width: 100%;
-    height: 46px;
-    border-radius: 10px;
-    border: 1px solid $color-font;
-    @include mq(tab) {
-      width: 396px;
+  &-serch{
+    &Box {
+      padding-left: 16px;
+      border: 1px solid $color-font;
+      border-radius: 10px;
+      font-size: 2rem;
+      font-family: FontAwesome;
+      width: 230px;
+      height: 46px;
+      @include tab {
+        width: 396px;
+      }
+    }
+    &Button {
+      padding: 11px 16px;
+      border: 1px solid $color-font;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 1.6rem;
+      color: $color-font;
+      background-color: $color-bg-button;
+      cursor: pointer;
+      width: 78px;
+      height: 46px;
+      @include tab {
+        width: 136px;
+      }
+      &:hover {
+        opacity: .7;
+      }
     }
   }
 }

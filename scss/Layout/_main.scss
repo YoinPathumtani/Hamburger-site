@@ -1,1 +1,9 @@
-/* メインエリアのスタイルを定義 */
+.l-main{
+  &-fr {
+    @include tab {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.c-button {
+  &-menu {
+    font-size: 2rem;
+    font-weight: bold;
+    color: $color-font;
+    cursor: pointer;
+    @include tab {
+      font-size: 3.4rem;
+    }
+    &:hover {
+      opacity: .7;
+    }
+  }
+  &-x {
+    &:hover {
+      opacity: .7;
+    }
+    @include pc {
+      display: none !important;
+    }
+  }
+}

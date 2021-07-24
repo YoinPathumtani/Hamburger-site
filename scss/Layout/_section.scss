@@ -1,21 +1,16 @@
-/* セクションエリアのスタイルを定義 */
-
 .l-section {
-  &-map {
-    grid-area: map;
-    background-image: url('/img/page-title_map.jpg');
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 100%;
-    @include mq(tab) {
-      background-image: url('/img/page-title_map@2x.jpg');
-      background-size: cover;
+  &-mv {
+    width: 100%;
+    min-height: 285px;
+    height: 285px;
+    position: relative;
+    @include pc {
+      height: 530px;
     }
-  }
-  &-pagiNation {
-    grid-area: pagiNa;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    h2 {
+      position: absolute;
+      top: calc(50% - 18px);
+      left: 6.6%;
+    }
   }
 }

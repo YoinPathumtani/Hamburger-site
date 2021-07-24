@@ -1,0 +1,20 @@
+.l-aside {
+  position: absolute;
+  top: 0;
+  right: -100vw;
+  z-index: 10;
+  transition: right .7s;
+  width: 87.5%;
+  overflow-y: scroll;
+  @include tab {
+    width: 44%;
+  }
+  @include pc {
+    position: static;
+    width: 100%;
+  }
+  &.show {
+    display: block;
+    right: 0;
+  }
+}

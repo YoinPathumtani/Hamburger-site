@@ -1,13 +1,16 @@
-$(function() {
-  $('#is-open').click(function() {
-    $('#overlay').fadeIn();
-    $('#g-nav').css('right', 0);
-    $('body').css('position', 'fixed');
-  });
-  $('#is-close').on('click', function() {
-    $('#overlay').fadeOut();
-    $('#g-nav').css('right', '-100vw');
-    $('body').css('position', 'static');
-  })
 
+$(function() {
+    $('#overlay').hide();
+    $('#is-open').click(function() {
+        $('#overlay').fadeIn();
+        $('#g-nav').toggleClass('show');
+        $('body').toggleClass('fixed');
+        $('body').css('position', 'fixed');
+    });
+    $('#is-close').click(function() {
+        $('#overlay').fadeOut();
+        $('#g-nav').removeClass('show');
+        $('body').removeClass('fixed');
+        $('body').css('position', 'static');
+    });
 });

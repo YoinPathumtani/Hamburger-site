@@ -1,0 +1,23 @@
+.p-map {
+  height: 691px;
+  background-color: $color-bg-map;
+  background-image: url('/images/index/l-section__map-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &-overlay {
+    background-color: $color-overlay-black30;
+    height: 60%;
+    padding: 40px;
+    overflow:visible;
+    @include tab {
+      height: 100%;
+    }
+    @include pc {
+      width: 61%;
+    }
+    p {
+      margin-top: 40px;
+    }
+  }
+}

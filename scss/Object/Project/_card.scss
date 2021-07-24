@@ -1,0 +1,38 @@
+.p-card {
+  &-service {
+    margin: 20px;
+    padding: 3.2%;
+    min-height: 642px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include tab {
+      width: 40%;
+    }
+    &01 {
+      background-image: url('/images/index/l-section__service-bg01.png');
+    }
+    &02 {
+      background-image: url('/images/index/l-section__service-bg02.png');
+    }
+    &__inr {
+      background-color: $color-overlay-white;
+      height: 162px;
+      margin-top: 3.2%;position: relative;
+      h3 {
+        position: absolute;
+        top: 5%;
+        left: 4%;
+      }
+      p {
+        position: absolute;
+        top: calc(50% - 8px);
+        left: 4%;
+      }
+    }
+
+  }
+}
