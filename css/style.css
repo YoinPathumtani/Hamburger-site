@@ -100,6 +100,10 @@ body {
   font-family: 'Roboto', 'mplus-1m', sans-serif;
 }
 
+body.fixed {
+  position: fixed;
+}
+
 img {
   width: 100%;
 }

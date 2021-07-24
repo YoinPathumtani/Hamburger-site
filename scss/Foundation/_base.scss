@@ -16,6 +16,9 @@ body {
   height: 100%;
   overflow-x: hidden;
   font-family: 'Roboto', 'mplus-1m', sans-serif;
+  &.fixed {
+    position: fixed;
+  }
 }
 img {
   width: 100%;
