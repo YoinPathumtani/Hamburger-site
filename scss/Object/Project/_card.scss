@@ -35,7 +35,10 @@
     }
   }
   &-text {
-    min-height: 345px;
+    height: 345px;
+    @include tab {
+      height: 255px;
+    }
     p {
       margin-top: 30px;
     }
@@ -43,14 +46,26 @@
   &-menu {
     height: 585px;
     background-color: $color-bg-box;
+    @include tab {
+      height: 354px;
+      display: flex;
+    }
     img {
       display: block;
       height: 40%;
+      @include tab {
+        width: 50%;
+        height: 100%;
+      }
     }
     &Text {
       padding: 17px;
       height: 60%;
       position: relative;
+      @include tab {
+        width: 50%;
+        height: 100%;
+      }
       h2, h3 {
         margin-top: 5%;
       }

@@ -1,0 +1,16 @@
+.p-pagination {
+  ul li a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border: 1px solid;
+    text-align: center;
+  }
+  &-active {
+    background-color: $color-bg-box;
+    color: $color-font-white;
+  }
+}

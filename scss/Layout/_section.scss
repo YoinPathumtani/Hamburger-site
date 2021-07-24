@@ -13,4 +13,41 @@
       left: 6.6%;
     }
   }
+  &-pagination {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 5% 30px 5%;
+    @include tab {
+      justify-content: center;
+    }
+    & > p {
+      display: none;
+      @include tab {
+        display: block;
+      }
+    }
+    & > a {
+      display: flex;
+      p {
+        @include tab {
+          display: none;
+        }
+      }
+    }
+    p, & > a {
+      align-self: center;
+      padding: 7px;
+    }
+    ul {
+      display: flex;
+      justify-content: center;
+      li {
+        padding: 7px;
+        display: none;
+        @include tab {
+          display: block;
+        }
+      }
+    }
+  }
 }
