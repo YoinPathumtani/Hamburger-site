@@ -1,6 +1,6 @@
 .p-card {
+  margin: 20px;
   &-service {
-    margin: 20px;
     padding: 3.2%;
     min-height: 642px;
     background-position: center;
@@ -33,6 +33,19 @@
         left: 4%;
       }
     }
-
+  }
+  &-text {
+    min-height: 345px;
+    p {
+      margin-top: 30px;
+    }
+  }
+  &-menu {
+    width: 894px;
+    background-color: $color-bg-box;
+    img {
+      display: block;
+      height: 40%;
+    }
   }
 }

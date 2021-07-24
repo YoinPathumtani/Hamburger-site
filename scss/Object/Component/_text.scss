@@ -6,19 +6,36 @@
       font-size: 6.4rem;
     }
     &:hover {
-      opacity: .7;
+      opacity: 0.7;
     }
   }
-  &-mvTitle {
-    color: $color-font-white;
-    font-size: 3.6rem;
+  &-mv {
     font-weight: bold;
+    color: $color-font-white;
+    line-height: 1;
+    &Title {
+      font-size: 3.6rem;
+    }
+    &Sub {
+      font-size: 1.6rem;
+    }
   }
   &-card {
     &Title {
-      color: $color-font-white;
-      font-size: 4.1rem;
-      font-weight: bold;
+      &-fr {
+        color: $color-font-white;
+        font-size: 4.1rem;
+        font-weight: bold;
+      }
+      &-ar {
+        font-size: 2.8rem;
+        font-weight: bold;
+        color: $color-font-main;
+      }
+    }
+    &-p {
+      font-size: 1.6rem;
+      color: $color-font-main;
     }
     &__inr {
       &Title {
@@ -30,7 +47,6 @@
         font-size: 1.6rem;
         color: $color-font-main;
       }
-
     }
   }
   &-map {
@@ -50,7 +66,7 @@
   &-footer {
     color: $color-font-white;
     font-size: 1.4rem;
-    transition: all .2s;
+    transition: all 0.2s;
     &:hover {
       color: $color-font-main;
     }
@@ -65,7 +81,7 @@
       font-size: 2rem;
       font-weight: normal;
       &:hover {
-        opacity: .7;
+        opacity: 0.7;
       }
     }
   }
