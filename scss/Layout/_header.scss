@@ -1,10 +1,14 @@
 .l-header {
   display: flex;
   flex-direction: column;
+  position: relative;
   button {
     align-self: flex-end;
     @include pc {
-      display: none;
+      position: absolute;
+      top: 80px;
+      right: -100px;
+      z-index: 11;
     }
   }
   h1,form {

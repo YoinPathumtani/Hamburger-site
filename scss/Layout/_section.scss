@@ -1,16 +1,15 @@
 .l-section {
   &-mv {
     width: 100%;
-    min-height: 285px;
     height: 285px;
     position: relative;
+    div {
+      position: absolute;
+      top: 43%;
+      left: 6.6%;
+    }
     @include pc {
       height: 530px;
-    }
-    h2 {
-      position: absolute;
-      top: calc(50% - 18px);
-      left: 6.6%;
     }
   }
   &-pagination {

@@ -1,8 +1,12 @@
 .p-gnav {
   background-color: $color-bg-gnav;
-  padding: 25px 17px 0 46px;
+  height: 100%;
+  & > ul {
+  padding: 212px 0 0 46px;
+  }
   i {
     float: right;
+    padding: 25px;
   }
   li {
     padding: 10px;

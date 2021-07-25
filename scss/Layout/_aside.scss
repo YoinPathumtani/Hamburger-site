@@ -6,7 +6,6 @@
   z-index: 10;
   transition: right .7s;
   width: 87.5%;
-  overflow-y: scroll;
   @include tab {
     width: 44%;
   }
@@ -17,5 +16,6 @@
   &.show {
     display: block;
     right: 0;
+    overflow-y: scroll;
   }
 }

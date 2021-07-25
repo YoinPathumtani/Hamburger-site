@@ -15,6 +15,9 @@
     line-height: 1;
     &Title {
       font-size: 3.6rem;
+      @include tab {
+        font-size: 6rem;
+      }
     }
     &Sub {
       font-size: 1.6rem;
@@ -82,11 +85,11 @@
     color: $color-font-white;
     font-size: 1.4rem;
     transition: all 0.2s;
-    &:hover {
-      color: $color-font-main;
-    }
     &__link {
       font-size: 2rem;
+      &:hover {
+        color: $color-font-main;
+      }
     }
   }
   &-menu {

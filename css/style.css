@@ -134,7 +134,6 @@ ol, ul, li {
   -webkit-transition: right .7s;
   transition: right .7s;
   width: 87.5%;
-  overflow-y: scroll;
 }
 
 @media (min-width: 600px) {
@@ -153,6 +152,7 @@ ol, ul, li {
 .l-aside.show {
   display: block;
   right: 0;
+  overflow-y: scroll;
 }
 
 .l-footer {
@@ -167,6 +167,7 @@ ol, ul, li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 
 .l-header button {
@@ -176,7 +177,10 @@ ol, ul, li {
 
 @media (min-width: 1025px) {
   .l-header button {
-    display: none;
+    position: absolute;
+    top: 80px;
+    right: -100px;
+    z-index: 11;
   }
 }
 
@@ -213,21 +217,20 @@ ol, ul, li {
 
 .l-section-mv {
   width: 100%;
-  min-height: 285px;
   height: 285px;
   position: relative;
+}
+
+.l-section-mv div {
+  position: absolute;
+  top: 43%;
+  left: 6.6%;
 }
 
 @media (min-width: 1025px) {
   .l-section-mv {
     height: 530px;
   }
-}
-
-.l-section-mv h2 {
-  position: absolute;
-  top: calc(50% - 18px);
-  left: 6.6%;
 }
 
 .l-section-pagination {
@@ -311,8 +314,21 @@ ol, ul, li {
   }
 }
 
+@media (min-width: 1025px) {
+  .c-button-menu {
+    background-color: #F2EDE9;
+    pointer-events: none;
+  }
+}
+
 .c-button-menu:hover {
   opacity: .7;
+}
+
+@media (min-width: 1025px) {
+  .c-button-menu:hover {
+    opacity: 1;
+  }
 }
 
 .c-button-x:hover {
@@ -328,10 +344,10 @@ ol, ul, li {
 .c-button-detail {
   display: inline-block;
   background-color: #fff;
-  padding: 10px;
   border-radius: 20px;
   text-align: center;
-  width: 50%;
+  width: 40%;
+  padding: 10px;
 }
 
 .c-deco-underLine {
@@ -432,6 +448,12 @@ ol, ul, li {
   font-size: 3.6rem;
 }
 
+@media (min-width: 600px) {
+  .c-text-mvTitle {
+    font-size: 6rem;
+  }
+}
+
 .c-text-mvSub {
   font-size: 1.6rem;
 }
@@ -510,12 +532,12 @@ ol, ul, li {
   transition: all 0.2s;
 }
 
-.c-text-footer:hover {
-  color: #3C2A10;
-}
-
 .c-text-footer__link {
   font-size: 2rem;
+}
+
+.c-text-footer__link:hover {
+  color: #3C2A10;
 }
 
 .c-text-menu {
@@ -723,6 +745,24 @@ ol, ul, li {
   background-size: cover;
 }
 
+@media (min-width: 600px) {
+  .p-mainVisual div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 600px) {
+  .p-mainVisual h3 {
+    padding: 10px;
+    margin-top: 10px;
+  }
+}
+
 .p-mainVisual-fr {
   background-image: url("/images/index/l-section__mv-bg.png");
 }
@@ -773,11 +813,16 @@ ol, ul, li {
 
 .p-gnav {
   background-color: #F2EDE9;
-  padding: 25px 17px 0 46px;
+  height: 100%;
+}
+
+.p-gnav > ul {
+  padding: 212px 0 0 46px;
 }
 
 .p-gnav i {
   float: right;
+  padding: 25px;
 }
 
 .p-gnav li {
