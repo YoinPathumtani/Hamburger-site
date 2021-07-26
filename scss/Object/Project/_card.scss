@@ -52,6 +52,7 @@
     }
     img {
       display: block;
+      object-fit: cover;
       height: 40%;
       @include tab {
         width: 50%;
@@ -71,7 +72,6 @@
       }
       p {
         margin-top: 10px;
-        height: 40%;
         overflow-y: hidden;
       }
       a {

@@ -669,6 +669,8 @@ blockquote {
 
 .p-card-menu img {
   display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 40%;
 }
 
@@ -698,7 +700,6 @@ blockquote {
 
 .p-card-menuText p {
   margin-top: 10px;
-  height: 40%;
   overflow-y: hidden;
 }
 
@@ -971,7 +972,6 @@ blockquote {
 
 .p-section-items > div:nth-of-type(2) p {
   width: 60%;
-  height: 176px;
   overflow-y: hidden;
 }
 
@@ -991,7 +991,6 @@ blockquote {
 
 .p-section-items > div:nth-of-type(3) p {
   width: 60%;
-  height: 176px;
   overflow-y: hidden;
 }
 
