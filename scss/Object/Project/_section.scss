@@ -1,55 +1,77 @@
 .p-section {
   &-items {
     color: $color-font-main;
+    padding: 10px 0 50px 0;
     & > div:first-of-type {
-    height: 124px;
+      min-height: 124px;
     }
     & > div:nth-of-type(2) {
-    display: flex;
-    img {
-      width: 40%;
-    }
-    p {
-      width: 60%;
-      height: 176px;
-      overflow-y: hidden;
-    }
+      display: flex;
+      img {
+        width: 40%;
+      }
+      p {
+        width: 60%;
+        height: 176px;
+        overflow-y: hidden;
+      }
     }
     & > div:nth-of-type(3) {
-    display: flex;
-    flex-direction: row-reverse;
-    img {
-      width: 40%;
-    }
-    p {
-      width: 60%;
-      height: 176px;
-      overflow-y: hidden;
-    }
+      display: flex;
+      flex-direction: row-reverse;
+      img {
+        width: 40%;
+      }
+      p {
+        width: 60%;
+        height: 176px;
+        overflow-y: hidden;
+      }
     }
     & > div:nth-of-type(4) {
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+  &-photos {
+    display: flex;
+    flex-direction: column;
+    img {
+      margin-bottom: 20px;
+    }
+    @include tab {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
       img {
-        width: 80%;
-        margin: 0 auto;
+        width: 49%;
+      }
+    }
+    @include pc {
+      img {
+        width: 32%;
       }
     }
   }
   &-list {
     font-size: 1.6rem;
-    ol li{
+    ol li {
       list-style-type: decimal;
       list-style-position: inside;
     }
-    ol ol li , ul ul li{
+    ol ol li,
+    ul ul li {
       margin-left: 1.6rem;
     }
-    ol , ul {
+    ol,
+    ul {
       margin-top: 30px;
     }
   }
   &-code {
     padding: 50px;
     background-color: $color-bg-blockquote;
+    font-size: 1.6rem;
   }
   &-table {
     table {
@@ -58,7 +80,8 @@
       text-align: left;
       font-size: 1.6rem;
     }
-    th, td {
+    th,
+    td {
       border: 1px solid $color-font;
       font-weight: normal;
       padding: 2rem;
@@ -67,5 +90,4 @@
       width: 40%;
     }
   }
-
 }
