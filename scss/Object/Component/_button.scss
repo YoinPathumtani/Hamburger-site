@@ -34,4 +34,15 @@
     width: 40%;
     padding: 10px;
   }
+  &-general {
+    max-width: 429px;
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 1px solid $color-font;
+    color: $color-font-main;
+    background: $color-bg-button-general;
+  }
 }

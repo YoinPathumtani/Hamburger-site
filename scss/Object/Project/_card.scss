@@ -81,4 +81,47 @@
       }
     }
   }
+  &-h {
+    color: $color-font-main;
+    font-size: 1.6rem;
+    font-weight: bold;
+    h2 {
+      font-size: 2.8rem;
+    }
+    h3 {
+      font-size: 2.4rem;
+    }
+    h4 {
+      font-size: 2rem;
+    }
+    h5 {
+      font-size: 2rem;
+    }
+    h6 {
+      font-size: 2rem;
+    }    
+    p {
+      height: 183px;
+      font-weight: normal;
+      overflow-y: hidden;
+    }
+  }
+  &-blockquote {
+    background-color: $color-bg-blockquote;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: $color-bg-box;
+    & > p {
+      height: 505px;
+      overflow-y: hidden;
+    }
+    div {
+      margin-top: 30px;
+      display: flex;
+      a {
+        text-decoration: underline;
+        color: $color-font-link;
+      }
+    }
+  }
 }
