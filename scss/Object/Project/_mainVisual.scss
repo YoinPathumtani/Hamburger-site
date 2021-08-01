@@ -1,7 +1,7 @@
 .p-mainVisual {
-  background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   div {
     @include tab {
       display: flex;
@@ -10,18 +10,18 @@
   }
   h3 {
     @include tab {
-      padding:10px;
+      padding: 10px;
       margin-top: 10px;
     }
   }
   &-fr {
-    background-image: url('/images/index/l-section__mv-bg.png');
+    background-image: url("../images/index/l-section__mv-bg.png");
   }
   &-pg {
-    background-image: url('/images/page/l-section__mv-bg.png');
+    background-image: url("../images/page/l-section__mv-bg.png");
   }
   &-ar {
-    background-image: url('/images/archive/l-section__mv-bg.png');
+    background-image: url("../images/archive/l-section__mv-bg.png");
     &::before {
       content: "";
       display: block;
@@ -31,7 +31,6 @@
     }
   }
   &-si {
-    background-image: url('/images/single/l-section__mv-bg.png');
+    background-image: url("../images/single/l-section__mv-bg.png");
   }
-  
 }

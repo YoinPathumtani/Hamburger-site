@@ -1,6 +1,7 @@
 .p-gnav {
   background-color: $color-bg-gnav;
   height: 100%;
+  padding: 212px 0 0 46px;
   & > ul {
   padding: 212px 0 0 46px;
   }
@@ -24,5 +25,6 @@
     width: 100%;
     height: 100%;
     background-color: $color-overlay-black50;
+    display: none;
   }
 }
