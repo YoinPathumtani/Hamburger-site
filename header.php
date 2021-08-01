@@ -3,7 +3,7 @@
 <!-- 言語の自動出力 -->
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- 管理画面＞設定＞一般２つ目から編集可 -->
   <meta name="description" content="<?php bloginfo('description'); ?>">
