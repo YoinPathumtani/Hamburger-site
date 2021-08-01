@@ -1,6 +1,6 @@
 <?php
 add_theme_support('menus');/* 外観/メニューの呼び出し */
-
+add_theme_support( 'post-thumbnails' );/* サムネイルの呼び出し */
 add_theme_support('title-tag');/* タイトルタグの呼び出し */
 
 function hamburger_title($title)

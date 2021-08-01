@@ -6,13 +6,12 @@
   <section class="l-section-mv p-mainVisual-ar p-mainVisual">
     <div>
       <h2 class="c-text-mvTitle c-text-mv">Menu:</h2>
-      <h3 class="c-text-mvSub c-text-mv">チーズバーガー</h3>
+      <h3 class="c-text-mvSub c-text-mv"><?php echo esc_html(single_term_title('',false)); ?></h3>
     </div>
   </section>
   <section class="p-card p-card-text">
-    <h2 class="c-text-cardTitle-ar">小見出しが入ります</h2>
+    <h2 class="c-text-cardTitle-ar"><?php echo esc_html(single_term_title('',false)); ?></h2>
     <p class="c-text-card-p">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-    <h3 class="c-text-mvSub c-text-mv">チーズバーガー</h3>
   </section>
   <section class="p-card p-card-menu">
     <img src="<?php echo get_template_directory_uri(); ?>/images/archive/l-section__menu.png" alt="商品の写真です" class="img-card-menu">
