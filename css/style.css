@@ -610,11 +610,11 @@ blockquote {
 }
 
 .p-card-service01 {
-  background-image: url("/images/index/l-section__service-bg01.png");
+  background-image: url("../images/index/l-section__service-bg01.png");
 }
 
 .p-card-service02 {
-  background-image: url("/images/index/l-section__service-bg02.png");
+  background-image: url("../images/index/l-section__service-bg02.png");
 }
 
 .p-card-service__inr {
@@ -764,7 +764,7 @@ blockquote {
 
 .p-footer {
   height: 150px;
-  background-image: url("/images/index/p-footer-bg.png");
+  background-image: url("../images/index/p-footer-bg.png");
 }
 
 .p-footer__nav {
@@ -842,15 +842,15 @@ blockquote {
 }
 
 .p-mainVisual-fr {
-  background-image: url("/images/index/l-section__mv-bg.png");
+  background-image: url("../images/index/l-section__mv-bg.png");
 }
 
 .p-mainVisual-pg {
-  background-image: url("/images/page/l-section__mv-bg.png");
+  background-image: url("../images/page/l-section__mv-bg.png");
 }
 
 .p-mainVisual-ar {
-  background-image: url("/images/archive/l-section__mv-bg.png");
+  background-image: url("../images/archive/l-section__mv-bg.png");
 }
 
 .p-mainVisual-ar::before {
@@ -862,13 +862,13 @@ blockquote {
 }
 
 .p-mainVisual-si {
-  background-image: url("/images/single/l-section__mv-bg.png");
+  background-image: url("../images/single/l-section__mv-bg.png");
 }
 
 .p-map {
   height: 691px;
   background-color: #000000;
-  background-image: url("/images/index/l-section__map-bg.png");
+  background-image: url("../images/index/l-section__map-bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

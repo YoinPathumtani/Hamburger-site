@@ -7,9 +7,7 @@
     </ul> -->
     <small class="c-text-footer">Copyright: RaiseTech</small>
   </footer>
-  <script src="/js/jquery-3.6.0.min.js"></script>
-  <script src="/js/style.js"></script>
-
+  <?php wp_footer(); ?>
 </body>
 
 </html>
