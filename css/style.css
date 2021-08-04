@@ -705,6 +705,7 @@ blockquote {
   color: #3C2A10;
   font-size: 1.6rem;
   font-weight: bold;
+  min-height: 80vh;
 }
 
 .p-card-h h2 {
