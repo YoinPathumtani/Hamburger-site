@@ -1,61 +1,5 @@
-<!DOCTYPE html>
-<html lang="ja">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="ここ
-  にDescriptionを記入します！">
-  <!-- CSS読み込み -->
-  <link rel="stylesheet" href="/css/style.css">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="icon" href="/images/favicon-32x32.png">
-  <title>🍔Hamburger shop🍔</title>
-</head>
-
-<body class="c-grid">
-  <header class="l-header p-header">
-    <button id="is-open" class="c-button-menu">Menu</button>
-    <h1><a href="index.html" class="c-text-siteTitle">Hamburger</a></h1>
-    <form action="#" method="#" class="p-header__search">
-      <input type="text" name="" id="" placeholder="&#xf002;チーズバーガー" class="c-input-serchBox">
-      <input type="submit" value="検索" class="c-input-serchButton ml-10">
-    </form>
-  </header><!-- l-header -->
-  <div id="overlay" class="p-gnav-overlap"></div>
-  <aside id="g-nav" class="l-aside p-gnav">
-    <i id="is-close" class="fa fa-times fa-4x c-button-x" aria-hidden="true"></i>
-    <ul>
-      <li class="c-text-menu">バーガー
-        <ul>
-          <li><a class="c-text-menu-item" href="archive.html">ハンバーガー</a></li>
-          <li><a class="c-text-menu-item" href="archive.html">チーズバーガー</a></li>
-          <li><a class="c-text-menu-item" href="archive.html">テリヤキバーガー</a></li>
-          <li><a class="c-text-menu-item" href="archive.html">アボガドバーガー</a></li>
-          <li><a class="c-text-menu-item" href="archive.html">フィッシュバーガー</a></li>
-          <li><a class="c-text-menu-item" href="archive.html">ベーコンバーガー</a></li>
-          <li><a class="c-text-menu-item" href="archive.html">チキンバーガー</a></li>
-        </ul>
-      </li>
-      <li class="c-text-menu">サイド
-        <ul>
-          <li><a class="c-text-menu-item" href="archive.html">ポテト</a></li>
-          <li><a class="c-text-menu-item" href="archive.html">サラダ</a></li>
-          <li><a class="c-text-menu-item" href="archive.html">ナゲット</a></li>
-          <li><a class="c-text-menu-item" href="archive.html">コーン</a></li>
-        </ul>
-      </li>
-      <li class="c-text-menu">ドリンク
-        <ul>
-          <li><a class="c-text-menu-item" href="archive.html">コーラ</a></li>
-          <li><a class="c-text-menu-item" href="archive.html">ファンタ</a></li>
-          <li><a class="c-text-menu-item" href="archive.html">オレンジ</a></li>
-          <li><a class="c-text-menu-item" href="archive.html">アップル</a></li>
-          <li><a class="c-text-menu-item" href="archive.html">紅茶（Ice/Hot）</a></li>
-          <li><a class="c-text-menu-item" href="archive.html">コーヒー（Ice/Hot）</a></li>
-        </ul>
-      </li>
-    </ul>
+<?php get_header(); ?>
+<?php get_sidebar(); ?>
   </aside><!-- l-aside -->
   <main class="l-main l-main-ar p-main-ar">
     <section class="l-section-mv p-mainVisual-ar p-mainVisual">
@@ -142,16 +86,4 @@
       </a>
     </section>
   </main><!-- l-main -->
-  <footer class="l-footer p-footer">
-    <ul class="p-footer__nav">
-      <li><a href="#" class="c-text-footer c-text-footer__link">ショップ情報</a></li>
-      <li><a href="#" class="c-text-footer c-text-footer__link">ヒストリー</a></li>
-    </ul>
-    <small class="c-text-footer">Copyright: RaiseTech</small>
-  </footer>
-  <script src="/js/jquery-3.6.0.min.js"></script>
-  <script src="/js/style.js"></script>
-
-</body>
-
-</html>
+  <?php get_footer(); ?>

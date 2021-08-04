@@ -82,14 +82,15 @@
     }
   }
   &-footer {
-    color: $color-font-white;
-    font-size: 1.4rem;
-    transition: all 0.2s;
     &__link {
+      a {
       font-size: 2rem;
+      transition: all 0.2s;
       &:hover {
         color: $color-font-main;
       }
+      }
+      
     }
   }
   &-menu {

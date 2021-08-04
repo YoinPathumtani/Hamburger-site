@@ -1,204 +1,24 @@
-<!DOCTYPE html>
-<html lang="ja">
+<?php get_header(); ?>
+<?php get_sidebar(); ?>
+</aside><!-- l-aside -->
+<main class="l-main">
+  <section class="l-section-mv p-mainVisual-pg p-mainVisual">
+    <div>
+      <h2 class="c-text-mv c-text-mvTitle"><?php the_title(); ?></h2>
+    </div>
+  </section>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="ここ
-  にDescriptionを記入します！">
-  <!-- CSS読み込み -->
-  <link rel="stylesheet" href="/css/style.css">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="icon" href="/images/favicon-32x32.png">
-  <title>🍔Hamburger shop🍔</title>
-</head>
+  <section class="p-card p-card-h">
+    <?php if(have_posts()): while(have_posts()): the_post(); ?>
+    <div id="post-<?php the_ID(); ?>"<?php post_class(); ?>>
+      <?php the_content(); ?>
+    </div>
+    <?php endwhile;
+    else:
+    ?>
+    <p>表示する記事がありません</p>
+    <?php endif; ?>
+  </section>
 
-<body class="c-grid">
-  <header class="l-header p-header">
-    <button id="is-open" class="c-button-menu">Menu</button>
-    <h1><a href="index.html" class="c-text-siteTitle">Hamburger</a></h1>
-    <form action="#" method="#" class="p-header__search">
-      <input type="text" name="" id="" placeholder="&#xf002;" class="c-input-serchBox">
-      <input type="submit" value="検索" class="c-input-serchButton ml-10">
-    </form>
-  </header><!-- l-header -->
-  <div id="overlay" class="p-gnav-overlap"></div>
-  <aside id="g-nav" class="l-aside p-gnav">
-    <i id="is-close" class="fa fa-times fa-4x c-button-x" aria-hidden="true"></i>
-    <ul>
-      <li class="c-text-menu">バーガー
-        <ul>
-          <li><a class="c-text-menu-item" href="archive.html">ハンバーガー</a></li>
-          <li><a class="c-text-menu-item" href="archive.html">チーズバーガー</a></li>
-          <li><a class="c-text-menu-item" href="archive.html">テリヤキバーガー</a></li>
-          <li><a class="c-text-menu-item" href="archive.html">アボガドバーガー</a></li>
-          <li><a class="c-text-menu-item" href="archive.html">フィッシュバーガー</a></li>
-          <li><a class="c-text-menu-item" href="archive.html">ベーコンバーガー</a></li>
-          <li><a class="c-text-menu-item" href="archive.html">チキンバーガー</a></li>
-        </ul>
-      </li>
-      <li class="c-text-menu">サイド
-        <ul>
-          <li><a class="c-text-menu-item" href="archive.html">ポテト</a></li>
-          <li><a class="c-text-menu-item" href="archive.html">サラダ</a></li>
-          <li><a class="c-text-menu-item" href="archive.html">ナゲット</a></li>
-          <li><a class="c-text-menu-item" href="archive.html">コーン</a></li>
-        </ul>
-      </li>
-      <li class="c-text-menu">ドリンク
-        <ul>
-          <li><a class="c-text-menu-item" href="archive.html">コーラ</a></li>
-          <li><a class="c-text-menu-item" href="archive.html">ファンタ</a></li>
-          <li><a class="c-text-menu-item" href="archive.html">オレンジ</a></li>
-          <li><a class="c-text-menu-item" href="archive.html">アップル</a></li>
-          <li><a class="c-text-menu-item" href="archive.html">紅茶（Ice/Hot）</a></li>
-          <li><a class="c-text-menu-item" href="archive.html">コーヒー（Ice/Hot）</a></li>
-        </ul>
-      </li>
-    </ul>
-  </aside><!-- l-aside -->
-  <main class="l-main">
-    <section class="l-section-mv p-mainVisual-pg p-mainVisual">
-      <div>
-        <h2 class="c-text-mv c-text-mvTitle">ショップについて</h2>
-      </div>
-    </section>
-    <section class="p-card p-card-h">
-      <h2>見出しh2</h2>
-      <p>
-        Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。
-      </p>
-    </section>
-    <section class="p-card p-card-h">
-      <h3>見出しh3</h3>
-    </section>
-    <section class="p-card p-card-h">
-      <h4>見出しh4</h4>
-    </section>
-    <section class="p-card p-card-h">
-      <h5>見出しh5</h5>
-    </section>
-    <section class="p-card p-card-h">
-      <h6>見出しh6</h6>
-    </section>
-    <blockquote cite="#" class="p-card-blockquote">
-      <p>Blockquote
-        引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ
-      </p>
-      <div>
-        <p>出典元：</p><cite><a href="#">○○○○○○○○○○○○</a></cite>
-      </div>
-    </blockquote>
-    <section class="l-section-items p-section-items">
-      <div class="p-card"><!-- div1 -->
-        <img src="/images/single/p-product_img01.png" alt="イメージ写真です">
-      </div>
-      <div class="p-card"><!-- div2 -->
-        <img src="/images/single/p-product_img02.png" alt="イメージ写真です">
-        <p class="c-text-card-menu-p ml-10"> テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります
-          テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります
-          テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります
-          テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります</p>
-      </div>
-      <div class="p-card"><!-- div3 -->
-        <img src="/images/single/p-product_img02.png" alt="イメージ写真です">
-        <p class="c-text-card-menu-p mr-10"> テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります
-          テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります
-          テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります
-          テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります</p>
-      </div>
-      <div><!-- div4 -->
-        <img src="/images/single/p-product_img01.png" alt="イメージ写真です">
-      </div>
-      <div class="p-card p-section-photos"><!-- div5 -->
-        <img src="/images/single/p-product_img01.png" alt="イメージ写真です">
-        <img src="/images/single/p-product_img01.png" alt="イメージ写真です">
-        <img src="/images/single/p-product_img01.png" alt="イメージ写真です">
-        <img src="/images/single/p-product_img01.png" alt="イメージ写真です">
-        <img src="/images/single/p-product_img01.png" alt="イメージ写真です">
-        <img src="/images/single/p-product_img01.png" alt="イメージ写真です">
-        <img src="/images/single/p-product_img01.png" alt="イメージ写真です">
-        <img src="/images/single/p-product_img01.png" alt="イメージ写真です">
-        <img src="/images/single/p-product_img01.png" alt="イメージ写真です">
-      </div>
-      <div class="p-card p-section-list">
-        <ol>
-          <li>リストリストリスト</li>
-          <li>リストリストリスト</li>
-          <ol>
-            <li>リスト2リスト2リスト2</li>
-            <li>リスト2リスト2リスト2</li>
-          </ol>
-        </ol>
-      </div>
-      <div class="p-card p-section-list">
-        <ul>
-          <li>リストリストリスト</li>
-          <li>リストリストリスト</li>
-          <ul>
-            <li>リスト2リスト2リスト2</li>
-            <li>リスト2リスト2リスト2</li>
-          </ul>
-        </ul>
-        <ul>
-          <li>リストリストリスト</li>
-          <li>リストリストリスト</li>
-        </ul>
-      </div>
-      <div class="p-card p-section-code">
-        <pre>
-          <code>
-            &lt;html&gt;
-              &lt;head&gt;
-              &lt;/head&gt;
-              &lt;body&gt;
-              &lt;/body&gt;
-            &lt;/html&gt;
-          </code>
-        </pre>
-      </div>
-      <div class="p-card p-section-table">
-        <table>
-          <tr>
-            <th>テーブル</th>
-            <td>テーブル</td>
-          </tr>
-          <tr>
-            <th>テーブル</th>
-            <td>テーブル</td>
-          </tr>
-          <tr>
-            <th>テーブル</th>
-            <td>テーブル</td>
-          </tr>
-          <tr>
-            <th>テーブル</th>
-            <td>テーブル</td>
-          </tr>
-          <tr>
-            <th class="u-utility-tableHide">テーブル</th>
-            <td>テーブル</td>
-          </tr>
-        </table>
-      </div>
-      <div class="p-card">
-        <button class="c-button-general">ボタン</button>
-      </div>
-      <div class="p-card">
-        <p class="c-text-bold">boldboldboldboldboldboldbold</p>
-      </div>
-    </section>
-  </main><!-- l-main -->
-  <footer class="l-footer p-footer">
-    <ul class="p-footer__nav">
-      <li><a href="#" class="c-text-footer c-text-footer__link">ショップ情報</a></li>
-      <li><a href="#" class="c-text-footer c-text-footer__link">ヒストリー</a></li>
-    </ul>
-    <small class="c-text-footer">Copyright: RaiseTech</small>
-  </footer>
-  <script src="/js/jquery-3.6.0.min.js"></script>
-  <script src="/js/style.js"></script>
-
-</body>
-
-</html>
+</main><!-- l-main -->
+<?php get_footer(); ?>

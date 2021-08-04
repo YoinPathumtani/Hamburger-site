@@ -108,7 +108,7 @@ img {
 
 a {
   text-decoration: none;
-  color: #707070;
+  color: inherit;
 }
 
 button {
@@ -540,18 +540,13 @@ blockquote {
   line-height: 2.35;
 }
 
-.c-text-footer {
-  color: #fff;
-  font-size: 1.4rem;
+.c-text-footer__link a {
+  font-size: 2rem;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
-.c-text-footer__link {
-  font-size: 2rem;
-}
-
-.c-text-footer__link:hover {
+.c-text-footer__link a:hover {
   color: #3C2A10;
 }
 
@@ -733,7 +728,7 @@ blockquote {
 }
 
 .p-card-h p {
-  height: 183px;
+  margin-bottom: 30px;
   font-weight: normal;
   overflow-y: hidden;
 }
@@ -763,6 +758,7 @@ blockquote {
 }
 
 .p-footer {
+  color: #fff;
   height: 150px;
   background-image: url("../images/index/p-footer-bg.png");
 }
