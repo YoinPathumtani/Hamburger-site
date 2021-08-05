@@ -1,16 +1,49 @@
-.p-pagination {
-  ul li a {
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
+// .p-pagination {
+//   ul li a {
+//     display: inline-block;
+//     width: 35px;
+//     height: 35px;
+//     line-height: 35px;
+//     font-size: 1.6rem;
+//     font-weight: bold;
+//     border: 1px solid;
+//     text-align: center;
+//   }
+//   &-active {
+//     background-color: $color-bg-box;
+//     color: $color-font-white;
+//   }
+// }
+
+.m-pagenation {
+  margin: 150px 0 64px;
+  display: flex;
+  justify-content: center;
+  a {
     font-size: 1.6rem;
-    font-weight: bold;
-    border: 1px solid;
-    text-align: center;
+    padding: 8px 13px;
+    margin: 7.5px;
+    border: 1px solid $color-font;
+    display: inline-block;
+    &:hover {
+      opacity: .7;
+    }
   }
-  &-active {
-    background-color: $color-bg-box;
+  .-current {
+    font-size: 1.6rem;
+    padding: 8px 13px;
+    margin: 7.5px;
+    border: 1px solid $color-font;
+    display: inline-block;
     color: $color-font-white;
+    background-color: $color-bg-box;
+  }
+  &__body {
+    display: flex;
+    justify-content: center;
+  }
+  &__prev a , &__next a {
+    border: none;
+    font-size: 1.6rem;
   }
 }
