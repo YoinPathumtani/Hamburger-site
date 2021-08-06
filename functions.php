@@ -29,7 +29,7 @@ function hamburger_script()
 add_action('wp_enqueue_scripts', 'hamburger_script');
 
 /* ページネーション出力 */
-function pagenation($pages = 9, $range = 9){
+function pagenation($pages = '', $range = 9){
   $showitems = ($range * 1)+1;
   global $paged;
   if(empty($paged)) $paged = 1;
@@ -45,7 +45,7 @@ function pagenation($pages = 9, $range = 9){
       // $img_pass = get_template_directory_uri();
       echo "<div class=\"m-pagenation\">";
       // 「1/2」表示 現在のページ数 / 総ページ数
-      // echo "<div class=\"m-pagenation__result\">". $paged."/". $pages."</div>";
+      echo "<div class=\"m-pagenation__result\">page". $paged."/". $pages."</div>";
       // 「前へ」を表示
       if($paged > 1) echo "<div class=\"m-pagenation__prev\"><a href='".get_pagenum_link($paged - 1)."'>&lt;&lt;</a></div>";
       // ページ番号を出力

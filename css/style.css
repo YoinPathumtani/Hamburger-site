@@ -985,6 +985,13 @@ blockquote {
   font-size: 1.6rem;
 }
 
+.m-pagenation__result {
+  font-size: 1.6rem;
+  padding: 8px 13px;
+  margin: 7.5px;
+  font-weight: bold;
+}
+
 .p-section-items {
   color: #3C2A10;
   padding: 10px 0 50px 0;
