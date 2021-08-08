@@ -302,6 +302,10 @@ blockquote {
   }
 }
 
+.l-section-search-result {
+  padding: 15px;
+}
+
 /* Object / Component */
 .c-button-menu {
   font-size: 2rem;
@@ -574,6 +578,12 @@ blockquote {
 .c-text-pagination {
   font-size: 1.6rem;
   font-weight: bold;
+}
+
+.c-text-search-result {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #3C2A10;
 }
 
 /* Object / Project */
