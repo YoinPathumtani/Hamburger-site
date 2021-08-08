@@ -217,6 +217,10 @@ blockquote {
   }
 }
 
+.l-main_404 {
+  min-height: 100vh;
+}
+
 .l-section-mv {
   width: 100%;
   height: 285px;
@@ -304,6 +308,7 @@ blockquote {
 
 .l-section-search-result {
   padding: 15px;
+  min-height: 100vh;
 }
 
 /* Object / Component */
@@ -871,6 +876,20 @@ blockquote {
 
 .p-mainVisual-si {
   background-image: url("../images/single/l-section__mv-bg.png");
+}
+
+.p-mainVisual-404 {
+  background-image: url("../images/404error.png");
+}
+
+.p-mainVisual-404-text {
+  padding: 20px;
+  min-height: 120vh;
+}
+
+.p-mainVisual-404-text a {
+  font-size: 1.6rem;
+  text-decoration: underline;
 }
 
 .p-map {

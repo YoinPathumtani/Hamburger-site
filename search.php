@@ -5,7 +5,7 @@
   <section class="l-section-mv p-mainVisual-ar p-mainVisual">
     <div>
       <h2 class="c-text-mvTitle c-text-mv">Serch:</h2>
-      <h3 class="c-text-mvSub c-text-mv"><?php echo $_GET['s']; ?></h3>
+      <h3 class="c-text-mvSub c-text-mv"><?php echo get_search_query(); ?></h3>
     </div>
   </section>
   <section class="p-card p-card-text">

@@ -33,5 +33,16 @@
   &-si {
     background-image: url('../images/single/l-section__mv-bg.png');
   }
+  &-404 {
+    background-image: url('../images/404error.png');
+    &-text {
+      padding: 20px;
+      min-height: 120vh;
+      a {
+        font-size: 1.6rem;
+        text-decoration: underline;
+      }
+    }
+  }
   
 }
