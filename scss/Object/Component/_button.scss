@@ -10,6 +10,7 @@
     @include pc {
       background-color: $color-bg-gnav;
       pointer-events: none;
+      display: none;
     }
     &:hover {
       opacity: .7;

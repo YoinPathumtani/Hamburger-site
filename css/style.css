@@ -329,6 +329,7 @@ blockquote {
   .c-button-menu {
     background-color: #F2EDE9;
     pointer-events: none;
+    display: none;
   }
 }
 
