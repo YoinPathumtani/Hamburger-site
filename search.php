@@ -31,16 +31,17 @@
               <a href="<?php the_permalink(); ?>" class="c-button-detail">詳しく見る</a>
             </div>
           </section>
+          <?php
+          if (function_exists('pagenation')) { // 関数が定義されていたらtrueになる
+            pagenation();
+          } ?>
         <?php endwhile;
       else :
         ?><p>表示する記事がありません</p>
     <?php endif;
     }
     ?>
-    <?php
-    if (function_exists('pagenation')) { // 関数が定義されていたらtrueになる
-      pagenation();
-    } ?>
+
   </div>
 </main><!-- l-main -->
 <?php get_footer(); ?>
